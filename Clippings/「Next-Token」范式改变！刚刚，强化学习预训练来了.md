@@ -1,13 +1,15 @@
 ---
-title: "「Next-Token」范式改变！刚刚，强化学习预训练来了"
-source: "https://juejin.cn/post/7514467937601798159"
+title: 「Next-Token」范式改变！刚刚，强化学习预训练来了
+source: https://juejin.cn/post/7514467937601798159
 author:
   - "[[机器之心]]"
 published: 2025-06-11
 created: 2025-06-12
-description: "在 2016 年的一次演讲中，Yann LeCun 曾将强化学习比喻成蛋糕上的樱桃。他提到，「如果把智能比作一块蛋糕，那么无监督学习就是蛋糕的主体，监督学习就是蛋糕上的糖霜，而强化学习则是糖霜上的樱桃"
+description: 在 2016 年的一次演讲中，Yann LeCun 曾将强化学习比喻成蛋糕上的樱桃。他提到，「如果把智能比作一块蛋糕，那么无监督学习就是蛋糕的主体，监督学习就是蛋糕上的糖霜，而强化学习则是糖霜上的樱桃
 tags:
-  - "clippings"
+  - clippings
+  - 强化学习预训练
+  - RPT
 ---
 ![横幅](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/8694dbc29caa4b59bda5f4181f3bd6ef~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/796c19f610c146ffac65db71d7329490~tplv-8jisjyls3a-2:0:0:q75.image)
 

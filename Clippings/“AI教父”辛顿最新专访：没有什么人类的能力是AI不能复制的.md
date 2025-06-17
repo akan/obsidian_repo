@@ -1,13 +1,15 @@
 ---
-title: "“AI教父”辛顿最新专访：没有什么人类的能力是AI不能复制的"
-source: "https://mp.weixin.qq.com/s/TjP8C3kJ2UFdU4sJOe0wrg"
+title: “AI教父”辛顿最新专访：没有什么人类的能力是AI不能复制的
+source: https://mp.weixin.qq.com/s/TjP8C3kJ2UFdU4sJOe0wrg
 author:
   - "[[蓝军总参谋部]]"
-published:
+published: 
 created: 2025-06-16
-description: "AI已学会欺骗人类？"
+description: AI已学会欺骗人类？
 tags:
-  - "clippings"
+  - clippings
+  - agi
+  - ai威胁
 ---
 蓝军总参谋部 *2025年06月16日 07:01*
 
