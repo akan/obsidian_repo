@@ -1,13 +1,12 @@
 ---
-title: "“逆天”研究！Cursor 与 Windsurf 背后的核心算法机制曝光！网友惊呼：Cursor代码总出Bug的原因找到了"
-source: "https://mp.weixin.qq.com/s/uFnulfTyLFDsKw3oHGKz4g"
+title: “逆天”研究！Cursor 与 Windsurf 背后的核心算法机制曝光！网友惊呼：Cursor代码总出Bug的原因找到了
+source: https://mp.weixin.qq.com/s/uFnulfTyLFDsKw3oHGKz4g
 author:
   - "[[云昭]]"
-published:
+published: 
 created: 2025-05-30
-description: "Cursor很快，但Bug也很多，原因找到了"
-tags:
-  - "clippings"
+description: Cursor很快，但Bug也很多，原因找到了
+tags: []
 ---
 Original 云昭 [51CTO技术栈](https://mp.weixin.qq.com/s/)
 
