@@ -1,12 +1,17 @@
 ---
-title: "【译】深入剖析 Yann LeCun 的 JEPA在人工智能（AI）研究领域，Yann LeCun 的观点独树一帜，且颇 - 掘金"
-source: "https://juejin.cn/post/7488990923051024421"
-author:
+title: 【译】深入剖析 Yann LeCun 的 JEPA在人工智能（AI）研究领域，Yann LeCun 的观点独树一帜，且颇 - 掘金
+source: https://juejin.cn/post/7488990923051024421
+author: 
 published: 2025-04-05
 created: 2025-05-07
 description: "在人工智能（AI）研究领域，Yann LeCun 的观点独树一帜，且颇具争议。截至 2024 年，AI 领域的主要关注点是大型语言模型（LLM）和生成式 AI。我们都被 LLM 在各种环境中的出色表现---theme: channing-cyan---     Yann LeCun 的相关演讲https://r"
 tags:
-  - "clippings"
+  - clippings
+  - 世界模型
+  - JEPA
+  - 联合嵌入预测架构
+  - 数据流
+  - 目标驱动的ai
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 

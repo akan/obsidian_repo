@@ -1,13 +1,13 @@
 ---
-title: "40岁大脑开始“断电”？—PNAS重磅发现酮体或能逆转中年脑衰老！"
-source: "https://mp.weixin.qq.com/s/_l6XaoKpB9IeMLl1OXDbng"
+title: 40岁大脑开始“断电”？—PNAS重磅发现酮体或能逆转中年脑衰老！
+source: https://mp.weixin.qq.com/s/_l6XaoKpB9IeMLl1OXDbng
 author:
   - "[[AgeTVA]]"
-published:
+published: 
 created: 2025-05-28
-description: "脑老化；中年窗口期；代谢干预；功能性磁共振成像（fMRI）；脑网络不稳定；GLUT4胰岛素依赖型葡萄糖转运蛋白；MCT2单羧酸/酮体转运蛋白；D-β-羟基丁酸（酮体）；神经元胰岛素抵抗；认知衰退预防；临床前干预策略"
+description: 脑老化；中年窗口期；代谢干预；功能性磁共振成像（fMRI）；脑网络不稳定；GLUT4胰岛素依赖型葡萄糖转运蛋白；MCT2单羧酸/酮体转运蛋白；D-β-羟基丁酸（酮体）；神经元胰岛素抵抗；认知衰退预防；临床前干预策略
 tags:
-  - "clippings"
+  - 代谢干预关键窗口
 ---
 Original AgeTVA [时光变体](https://mp.weixin.qq.com/s/)
 
