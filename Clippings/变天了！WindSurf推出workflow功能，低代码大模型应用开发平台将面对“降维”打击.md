@@ -1,13 +1,13 @@
 ---
-title: "变天了！WindSurf推出workflow功能，低代码大模型应用开发平台将面对“降维”打击"
-source: "https://mp.weixin.qq.com/s/DbJVqr9ePbEAe-R9Ei7DVw"
+title: 变天了！WindSurf推出workflow功能，低代码大模型应用开发平台将面对“降维”打击
+source: https://mp.weixin.qq.com/s/DbJVqr9ePbEAe-R9Ei7DVw
 author:
   - "[[ully]]"
-published:
+published: 
 created: 2025-05-08
-description: "Windsurf 又发新功能！dify，coze进入十字路口"
+description: Windsurf 又发新功能！dify，coze进入十字路口
 tags:
-  - "clippings"
+  - workflows
 ---
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/aaN2xdFqa4HGB9ImQXZAgC3KZPEVWkjxGCRy1PMdibOicyAPibAvAWQib3tP7huV2XBQgNLGYBA78BYiaAKcn3d49lQ/0?wx_fmt=jpeg)
 
