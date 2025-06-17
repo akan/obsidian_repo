@@ -6,7 +6,11 @@ author:
 published: 
 created: 2025-05-30
 description: Cursor很快，但Bug也很多，原因找到了
-tags: []
+tags:
+  - ai辅助编程
+  - 提示结构
+  - 上下文索引
+  - workflows
 ---
 Original 云昭 [51CTO技术栈](https://mp.weixin.qq.com/s/)
 

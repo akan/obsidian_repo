@@ -1,13 +1,15 @@
 ---
-title: "“最近看的AI项目，全是一个模子出来的”"
-source: "https://mp.weixin.qq.com/s/qYrmFwtJhWhCFxqKKt4zsQ"
+title: “最近看的AI项目，全是一个模子出来的”
+source: https://mp.weixin.qq.com/s/qYrmFwtJhWhCFxqKKt4zsQ
 author:
   - "[[刘燕秋]]"
-published:
+published: 
 created: 2025-05-08
-description: "现阶段多数人还是在赌。"
+description: 现阶段多数人还是在赌。
 tags:
-  - "clippings"
+  - clippings
+  - 大型语言模型
+  - agent
 ---
 Original 刘燕秋 *2025年05月07日 14:26*
 
