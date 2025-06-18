@@ -1,13 +1,13 @@
 ---
-title: "大力出奇迹失灵了？ModelSwitch跳出采样黑洞，改写大模型推理范式"
-source: "https://mp.weixin.qq.com/s/j6NBGJFhma6x_FVIjUutug"
+title: 大力出奇迹失灵了？ModelSwitch跳出采样黑洞，改写大模型推理范式
+source: https://mp.weixin.qq.com/s/j6NBGJFhma6x_FVIjUutug
 author:
   - "[[让你更懂AI的]]"
-published:
+published: 
 created: 2025-06-16
-description: "一招节省14倍推理成本！"
+description: 一招节省14倍推理成本！
 tags:
-  - "clippings"
+  - ModelSwitch
 ---
 Original 让你更懂AI的 *2025年06月16日 18:07*
 

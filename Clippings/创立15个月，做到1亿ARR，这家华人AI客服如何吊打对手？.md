@@ -1,13 +1,16 @@
 ---
-title: "创立15个月，做到1亿ARR，这家华人AI客服如何吊打对手？"
-source: "https://mp.weixin.qq.com/s/LHkWlnMstFGw94mOB13wlw"
+title: 创立15个月，做到1亿ARR，这家华人AI客服如何吊打对手？
+source: https://mp.weixin.qq.com/s/LHkWlnMstFGw94mOB13wlw
 author:
   - "[[智能乌鸦]]"
-published:
+published: 
 created: 2025-05-09
-description: "客服从成本中心向价值中心转型"
+description: 客服从成本中心向价值中心转型
 tags:
-  - "clippings"
+  - Crescendo
+  - 结果导向定价
+  - Decagon
+  - Shulex
 ---
 ![cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/9VjWVBpa4szvHOJIDXmN1WbzmzDbyqByABUFV9icbGnWBz0icx8cAmdcqFx4utvmnzzg4ZLb7z3PWXP2XcpBuSag/0?wx_fmt=jpeg)
 

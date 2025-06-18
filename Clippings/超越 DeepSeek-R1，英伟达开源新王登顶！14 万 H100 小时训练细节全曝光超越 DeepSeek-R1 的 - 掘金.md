@@ -1,20 +1,14 @@
 ---
-title: "超越 DeepSeek-R1，英伟达开源新王登顶！14 万 H100 小时训练细节全曝光超越 DeepSeek-R1 的 - 掘金"
-source: "https://juejin.cn/post/7500859352061919242"
-author:
+title: 超越 DeepSeek-R1，英伟达开源新王登顶！14 万 H100 小时训练细节全曝光超越 DeepSeek-R1 的 - 掘金
+source: https://juejin.cn/post/7500859352061919242
+author: 
 published: 2025-05-06
 created: 2025-05-07
-description: "超越 DeepSeek-R1 的英伟达开源新王 Llama-Nemotron，是怎么训练出来的？刚刚放出的论文，把一切细节毫无保留地全部揭秘了！"
+description: 超越 DeepSeek-R1 的英伟达开源新王 Llama-Nemotron，是怎么训练出来的？刚刚放出的论文，把一切细节毫无保留地全部揭秘了！
 tags:
-  - "clippings"
-title: "超越 DeepSeek-R1，英伟达开源新王登顶！14 万 H100 小时训练细节全曝光超越 DeepSeek-R1 的 - 掘金"
-source: "https://juejin.cn/post/7500859352061919242"
-author:
-published: 2025-05-06
-created: 2025-05-07
-description: "超越 DeepSeek-R1 的英伟达开源新王 Llama-Nemotron，是怎么训练出来的？刚刚放出的论文，把一切细节毫无保留地全部揭秘了！"
-tags:
-  - "clippings"
+  - Llama-Nemotron
+  - Puzzle框架
+  - FFN融合
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 

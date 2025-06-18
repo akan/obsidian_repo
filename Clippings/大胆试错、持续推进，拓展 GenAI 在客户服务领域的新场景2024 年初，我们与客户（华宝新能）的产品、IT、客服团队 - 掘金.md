@@ -1,12 +1,16 @@
 ---
-title: "大胆试错、持续推进，拓展 GenAI 在客户服务领域的新场景2024 年初，我们与客户（华宝新能）的产品、IT、客服团队 - 掘金"
-source: "https://juejin.cn/post/7497821245612359730"
-author:
+title: 大胆试错、持续推进，拓展 GenAI 在客户服务领域的新场景2024 年初，我们与客户（华宝新能）的产品、IT、客服团队 - 掘金
+source: https://juejin.cn/post/7497821245612359730
+author: 
 published: 2025-04-28
 created: 2025-05-07
-description: "2024 年初，我们与客户（华宝新能）的产品、IT、客服团队共同探讨如何借助新兴的生成式 AI（Generative AI, GenAI）技术赋能客服团队，期望通过自动化总结和提炼现有知识库内容，高效"
+description: 2024 年初，我们与客户（华宝新能）的产品、IT、客服团队共同探讨如何借助新兴的生成式 AI（Generative AI, GenAI）技术赋能客服团队，期望通过自动化总结和提炼现有知识库内容，高效
 tags:
-  - "clippings"
+  - 多意图Multi-Agent
+  - ai客服
+  - 数据质量低
+  - 意图标注偏差
+  - 固定模板局限
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 
