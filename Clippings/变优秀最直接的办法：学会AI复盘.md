@@ -1,13 +1,15 @@
 ---
-title: "变优秀最直接的办法：学会AI复盘"
-source: "https://mp.weixin.qq.com/s/lo36KqvBEJMLibDzlqBksg"
+title: 变优秀最直接的办法：学会AI复盘
+source: https://mp.weixin.qq.com/s/lo36KqvBEJMLibDzlqBksg
 author:
   - "[[嘉龙]]"
-published:
+published: 
 created: 2025-06-03
-description: "AI复盘上瘾！我用这个方法，让成长速度提升了3倍！"
+description: AI复盘上瘾！我用这个方法，让成长速度提升了3倍！
 tags:
-  - "clippings"
+  - 复盘
+  - 对话式复盘
+  - 第三认知系统
 ---
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/V15peFY0tDMibCOibCLaJ0oJVFZdmBBY315UMN5z3TnvDqIrlTIIf6T7oWXVwDicichYFBnru3gnISib9avofiargpEQ/0?wx_fmt=jpeg)
 

@@ -8,6 +8,7 @@ created: 2025-05-08
 description: Windsurf 又发新功能！dify，coze进入十字路口
 tags:
   - workflows
+  - AI驱动的流程自建
 ---
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/aaN2xdFqa4HGB9ImQXZAgC3KZPEVWkjxGCRy1PMdibOicyAPibAvAWQib3tP7huV2XBQgNLGYBA78BYiaAKcn3d49lQ/0?wx_fmt=jpeg)
 

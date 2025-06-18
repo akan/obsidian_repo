@@ -1,13 +1,14 @@
 ---
-title: "产品没火不是AI不够强，而是“用户不够信”——揭秘 CAIR 成功公式"
-source: "https://juejin.cn/post/7516306850715893798"
+title: 产品没火不是AI不够强，而是“用户不够信”——揭秘 CAIR 成功公式
+source: https://juejin.cn/post/7516306850715893798
 author:
   - "[[AI小智]]"
 published: 2025-06-16
 created: 2025-06-16
-description: "技术好 ≠ 用户用：AI 产品的最大障碍是“信任” 从事 AI 产品多年后，作者团队总结出一个核心认知：影响 AI 产品成功的关键，并不是 AI 模型本身，而是用户对结果的信心。 我们需要的不只是一个"
+description: 技术好 ≠ 用户用：AI 产品的最大障碍是“信任” 从事 AI 产品多年后，作者团队总结出一个核心认知：影响 AI 产品成功的关键，并不是 AI 模型本身，而是用户对结果的信心。 我们需要的不只是一个
 tags:
-  - "clippings"
+  - 用户对结果的信心
+  - CAIR
 ---
 ![横幅](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/8694dbc29caa4b59bda5f4181f3bd6ef~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/796c19f610c146ffac65db71d7329490~tplv-8jisjyls3a-2:0:0:q75.image)
 

@@ -1,13 +1,18 @@
 ---
-title: "别再乱学AI了！我花7天实践了张Zara的方法，从此告别焦虑"
-source: "https://mp.weixin.qq.com/s?__biz=MjM5ODU1MzQzOQ==&chksm=b02ce7f849378375cb9c5504b5b2a49a0e5f128712b63bbf1f3ebcfc22ada8d5c0d4b09bb7c6&idx=1&mid=2451426676&sn=21200fe64e57f7322f82d08b092eda06#rd"
+title: 别再乱学AI了！我花7天实践了张Zara的方法，从此告别焦虑
+source: https://mp.weixin.qq.com/s?__biz=MjM5ODU1MzQzOQ==&chksm=b02ce7f849378375cb9c5504b5b2a49a0e5f128712b63bbf1f3ebcfc22ada8d5c0d4b09bb7c6&idx=1&mid=2451426676&sn=21200fe64e57f7322f82d08b092eda06#rd
 author:
   - "[[AI产品黄叔]]"
-published:
+published: 
 created: 2025-06-12
-description: "最近我的朋友圈被@张咋啦（Zara）刷屏了！她对AI学习的独到见解让我眼前一亮，亲自实践后更是发现效果惊人。"
+description: 最近我的朋友圈被@张咋啦（Zara）刷屏了！她对AI学习的独到见解让我眼前一亮，亲自实践后更是发现效果惊人。
 tags:
-  - "clippings"
+  - clippings
+  - youtube
+  - 深度学习
+  - 跟随创造者
+  - 深度使用
+  - 内化与输出
 ---
 Original AI产品黄叔 *2025年06月10日 17:30*
 
