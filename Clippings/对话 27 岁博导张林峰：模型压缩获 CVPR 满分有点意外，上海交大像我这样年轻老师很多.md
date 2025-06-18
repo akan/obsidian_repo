@@ -1,13 +1,15 @@
 ---
-title: "对话 27 岁博导张林峰：模型压缩获 CVPR 满分有点意外，上海交大像我这样年轻老师很多"
-source: "https://juejin.cn/post/7508700455299481615"
+title: 对话 27 岁博导张林峰：模型压缩获 CVPR 满分有点意外，上海交大像我这样年轻老师很多
+source: https://juejin.cn/post/7508700455299481615
 author:
   - "[[量子位]]"
 published: 2025-05-27
 created: 2025-05-28
-description: "上海交大、27 岁、最年轻博导，留给张林峰的标签不多了（Doge）。 最新引发关注的，是他实实在在的一个论文成果—— 他们提出了一种新的数据集蒸馏方法，结果获得了 CVPR 2025 满分。"
+description: 上海交大、27 岁、最年轻博导，留给张林峰的标签不多了（Doge）。 最新引发关注的，是他实实在在的一个论文成果—— 他们提出了一种新的数据集蒸馏方法，结果获得了 CVPR 2025 满分。
 tags:
-  - "clippings"
+  - 模型压缩
+  - 分布差异度量NCFD
+  - Toca
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/2fd8e96805614492bb2076e3eca5f7a5~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/0d6404b693834ec1a4d258177bb8baf2~tplv-8jisjyls3a-2:0:0:q75.image)
 

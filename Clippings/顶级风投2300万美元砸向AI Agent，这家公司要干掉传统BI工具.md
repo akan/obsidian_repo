@@ -1,13 +1,18 @@
 ---
-title: "顶级风投2300万美元砸向AI Agent，这家公司要干掉传统BI工具"
-source: "https://mp.weixin.qq.com/s/Nx5DNLRDtz6xvxJntwS6SQ?version=4.1.36.91041&platform=mac&from=industrynews#rd"
+title: 顶级风投2300万美元砸向AI Agent，这家公司要干掉传统BI工具
+source: https://mp.weixin.qq.com/s/Nx5DNLRDtz6xvxJntwS6SQ?version=4.1.36.91041&platform=mac&from=industrynews#rd
 author:
   - "[[Weixin Official Accounts Platform]]"
-published:
+published: 
 created: 2025-05-14
-description: "还在为等待数据分析师出报表而烦恼吗？想象一下，作为销售主管，你只需简单问一句\x26quot;本季度销售情况如何\x26quot;，就能立刻"
+description: 还在为等待数据分析师出报表而烦恼吗？想象一下，作为销售主管，你只需简单问一句&quot;本季度销售情况如何&quot;，就能立刻
 tags:
-  - "clippings"
+  - WisdomAI
+  - BI
+  - 知识织物
+  - 数据仓库
+  - 数据可视化
+  - 自然语言查询
 ---
 ![cover_image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/CpibNcoQfQmyI8iagEVdTk8agdA8cZEImH123jqZ7DHiau6nWhl0WCpsyl8DsUAEp1kRKpanWopTK8kSuyrkdP5YA/0?wx_fmt=jpeg)
 
