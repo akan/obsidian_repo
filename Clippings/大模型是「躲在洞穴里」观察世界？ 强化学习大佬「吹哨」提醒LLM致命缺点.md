@@ -1,13 +1,14 @@
 ---
-title: "大模型是「躲在洞穴里」观察世界？ 强化学习大佬「吹哨」提醒LLM致命缺点"
-source: "https://juejin.cn/post/7514234142776279074"
+title: 大模型是「躲在洞穴里」观察世界？ 强化学习大佬「吹哨」提醒LLM致命缺点
+source: https://juejin.cn/post/7514234142776279074
 author:
   - "[[机器之心]]"
 published: 2025-06-10
 created: 2025-06-11
-description: "「我一直很困惑，语言模型怎么能从下一个 token 预测中学到这么多，而视频模型从下一帧预测中学到的却那么少？难道是因为大模型（LLM）其实是伪装的大脑扫描仪？」 近日，加州大学伯克利分校副教授、强化"
+description: 「我一直很困惑，语言模型怎么能从下一个 token 预测中学到这么多，而视频模型从下一帧预测中学到的却那么少？难道是因为大模型（LLM）其实是伪装的大脑扫描仪？」 近日，加州大学伯克利分校副教授、强化
 tags:
-  - "clippings"
+  - 洞穴
+  - 思维投影
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/4aa95988b3f945449bac2d73b1c8d07d~tplv-8jisjyls3a-3:0:0:q75.png)
 

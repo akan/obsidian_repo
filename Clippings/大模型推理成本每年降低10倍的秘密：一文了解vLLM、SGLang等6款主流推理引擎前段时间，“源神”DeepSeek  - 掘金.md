@@ -1,12 +1,19 @@
 ---
-title: "大模型推理成本每年降低10倍的秘密：一文了解vLLM、SGLang等6款主流推理引擎前段时间，“源神”DeepSeek  - 掘金"
-source: "https://juejin.cn/post/7500977298608455691"
-author:
+title: 大模型推理成本每年降低10倍的秘密：一文了解vLLM、SGLang等6款主流推理引擎前段时间，“源神”DeepSeek  - 掘金
+source: https://juejin.cn/post/7500977298608455691
+author: 
 published: 2025-05-06
 created: 2025-05-08
-description: "前段时间，“源神”DeepSeek 又在 Github 上宣布开源计划了，这次将开源的是 DeepSeek 自研的推理引擎，也是更早之前 DeepSeek 开源周最后一天发布的“One More Th"
+description: 前段时间，“源神”DeepSeek 又在 Github 上宣布开源计划了，这次将开源的是 DeepSeek 自研的推理引擎，也是更早之前 DeepSeek 开源周最后一天发布的“One More Th
 tags:
-  - "clippings"
+  - 推理引擎
+  - vllm
+  - sglang
+  - llama-cpp
+  - TGI
+  - TensorRT-LLM
+  - deepspeed
+  - PPInfer
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 

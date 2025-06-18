@@ -1,12 +1,19 @@
 ---
-title: "低代码平台深度拆解：NocoBase 的优势、挑战与 iVX 的破局之道一、NocoBase：重新定义 “可扩展应用”  - 掘金"
-source: "https://juejin.cn/post/7490511278058782755"
-author:
+title: 低代码平台深度拆解：NocoBase 的优势、挑战与 iVX 的破局之道一、NocoBase：重新定义 “可扩展应用”  - 掘金
+source: https://juejin.cn/post/7490511278058782755
+author: 
 published: 2025-04-08
 created: 2025-05-07
-description: "一、NocoBase：重新定义 “可扩展应用” 的低代码范式 如果你把低代码平台比作 “数字乐高”，那 NocoBase 就是一套自带 “万能接口” 的积木 —— 它本质是一个插件化架构的完整应用框架 一、NocoBase：重新定义 “可扩展应用” 的低代码范式如果你把低代码平台比作 “数字乐高”，那 NocoBa"
+description: 一、NocoBase：重新定义 “可扩展应用” 的低代码范式 如果你把低代码平台比作 “数字乐高”，那 NocoBase 就是一套自带 “万能接口” 的积木 —— 它本质是一个插件化架构的完整应用框架 一、NocoBase：重新定义 “可扩展应用” 的低代码范式如果你把低代码平台比作 “数字乐高”，那 NocoBa
 tags:
-  - "clippings"
+  - 平台即应用
+  - 工具即代码
+  - NocoBase
+  - iVX
+  - 可视化配置
+  - 生成式低代码
+  - 低代码
+  - 智能代码生成
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 

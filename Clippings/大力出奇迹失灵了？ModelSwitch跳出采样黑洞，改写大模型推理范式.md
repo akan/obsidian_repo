@@ -8,6 +8,7 @@ created: 2025-06-16
 description: 一招节省14倍推理成本！
 tags:
   - ModelSwitch
+  - 2模型采样预算
 ---
 Original 让你更懂AI的 *2025年06月16日 18:07*
 
