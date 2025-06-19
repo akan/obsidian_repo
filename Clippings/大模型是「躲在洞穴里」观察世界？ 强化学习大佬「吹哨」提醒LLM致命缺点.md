@@ -9,6 +9,9 @@ description: 「我一直很困惑，语言模型怎么能从下一个 token 预
 tags:
   - 洞穴
   - 思维投影
+  - 强化学习
+  - 逆向工程
+  - 真正的学习
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/4aa95988b3f945449bac2d73b1c8d07d~tplv-8jisjyls3a-3:0:0:q75.png)
 
