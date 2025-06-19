@@ -1,13 +1,13 @@
 ---
-title: "揭秘Claude系统提示词：这才是Artifacts的正确打开方式"
-source: "https://juejin.cn/post/7514630775501996068"
+title: 揭秘Claude系统提示词：这才是Artifacts的正确打开方式
+source: https://juejin.cn/post/7514630775501996068
 author:
   - "[[星际码仔]]"
 published: 2025-06-12
 created: 2025-06-13
-description: "了解 Artifacts 组件的核心设计原则，在其能力限制范围内最大化地挖掘其可用的编程用例，对于客观地评判模型的编码能力至关重要。"
+description: 了解 Artifacts 组件的核心设计原则，在其能力限制范围内最大化地挖掘其可用的编程用例，对于客观地评判模型的编码能力至关重要。
 tags:
-  - "clippings"
+  - Artifacts
 ---
 ![横幅](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/8694dbc29caa4b59bda5f4181f3bd6ef~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/796c19f610c146ffac65db71d7329490~tplv-8jisjyls3a-2:0:0:q75.image)
 

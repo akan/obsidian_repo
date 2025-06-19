@@ -1,12 +1,15 @@
 ---
-title: "华为曝光两大黑科技！打破推理延迟魔咒，大模型从此「秒回」刚刚，昇腾两大技术创新，突破速度瓶颈重塑 AI 推理。Fusio - 掘金"
-source: "https://juejin.cn/post/7506455412754399283"
-author:
+title: 华为曝光两大黑科技！打破推理延迟魔咒，大模型从此「秒回」刚刚，昇腾两大技术创新，突破速度瓶颈重塑 AI 推理。Fusio - 掘金
+source: https://juejin.cn/post/7506455412754399283
+author: 
 published: 2025-05-21
 created: 2025-05-21
-description: "刚刚，昇腾两大技术创新，突破速度瓶颈重塑 AI 推理。FusionSpec 创新的框架设计配合昇腾强大的计算能力，将投机推理框架耗时降至毫秒级，打破延迟魔咒。"
+description: 刚刚，昇腾两大技术创新，突破速度瓶颈重塑 AI 推理。FusionSpec 创新的框架设计配合昇腾强大的计算能力，将投机推理框架耗时降至毫秒级，打破延迟魔咒。
 tags:
-  - "clippings"
+  - FusionSpec
+  - OptiQuant
+  - 投机推理技术
+  - 量化框架
 ---
 ![横幅](https://p6-piu.byteimg.com/tos-cn-i-8jisjyls3a/0bdb448b29434da59b1e21fcb970e11f~tplv-8jisjyls3a-image.image) ![](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/c676d36a15f248e8aedb339deddadb90~tplv-8jisjyls3a-image.image)
 
