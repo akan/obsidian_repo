@@ -1,13 +1,22 @@
 ---
-title: "开启 AI 自主进化时代，普林斯顿Alita颠覆传统通用智能体，GAIA榜单引来终章"
-source: "https://juejin.cn/post/7511887311531180032"
+title: 开启 AI 自主进化时代，普林斯顿Alita颠覆传统通用智能体，GAIA榜单引来终章
+source: https://juejin.cn/post/7511887311531180032
 author:
   - "[[机器之心]]"
 published: 2025-06-04
 created: 2025-06-05
-description: "智能体技术日益发展，但现有的许多通用智能体仍然高度依赖于人工预定义好的工具库和工作流，这极大限制了其创造力、可扩展性与泛化能力。 近期，普林斯顿大学 AI Lab 推出了 Alita——一个秉持「极简"
+description: 智能体技术日益发展，但现有的许多通用智能体仍然高度依赖于人工预定义好的工具库和工作流，这极大限制了其创造力、可扩展性与泛化能力。 近期，普林斯顿大学 AI Lab 推出了 Alita——一个秉持「极简
 tags:
-  - "clippings"
+  - 最小化预定义
+  - 最大化自我进化
+  - Alita
+  - Manager-Agent
+  - Web-Agent
+  - MCP创建组件
+  - MCP-Brainstorming模块
+  - 脚本生成模块
+  - 代码运行与验证模块
+  - 自我工具创建
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/2fd8e96805614492bb2076e3eca5f7a5~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/0d6404b693834ec1a4d258177bb8baf2~tplv-8jisjyls3a-2:0:0:q75.image)
 

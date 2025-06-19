@@ -1,13 +1,20 @@
 ---
-title: "仅需一百GPU时，科学家拆掉大模型融合“三堵墙”，可基于任何开源模型打造更强模型"
-source: "https://mp.weixin.qq.com/s/W4e88jbwkHFCHq-0JQcwRw"
+title: 仅需一百GPU时，科学家拆掉大模型融合“三堵墙”，可基于任何开源模型打造更强模型
+source: https://mp.weixin.qq.com/s/W4e88jbwkHFCHq-0JQcwRw
 author:
   - "[[DeepTech深科技]]"
-published:
+published: 
 created: 2025-06-12
-description: "在过去一年间，香港理工大学计算机与数学科学学院副院长杨红霞教授和团队先后做出 InfiFusion、InfiG"
+description: 在过去一年间，香港理工大学计算机与数学科学学院副院长杨红霞教授和团队先后做出 InfiFusion、InfiG
 tags:
-  - "clippings"
+  - InfiFusion
+  - InfiGFusion
+  - InfiFPO
+  - 跨词表蒸馏
+  - 推理链路兼容
+  - logits-graph
+  - 偏好融合
+  - 多源概率融合
 ---
 DeepTech深科技 [DeepTech深科技](https://mp.weixin.qq.com/s/)
 
