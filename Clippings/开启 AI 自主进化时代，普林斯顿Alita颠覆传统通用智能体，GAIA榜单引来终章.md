@@ -17,6 +17,7 @@ tags:
   - 脚本生成模块
   - 代码运行与验证模块
   - 自我工具创建
+  - 智能体蒸馏
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/2fd8e96805614492bb2076e3eca5f7a5~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/0d6404b693834ec1a4d258177bb8baf2~tplv-8jisjyls3a-2:0:0:q75.image)
 

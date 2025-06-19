@@ -1,13 +1,18 @@
 ---
-title: "昆仑万维面向全球发布天工超级智能体：基于deep research的“AI版office”"
-source: "https://mp.weixin.qq.com/s/5vqrIevfZRWULzTwtHK7nQ"
+title: 昆仑万维面向全球发布天工超级智能体：基于deep research的“AI版office”
+source: https://mp.weixin.qq.com/s/5vqrIevfZRWULzTwtHK7nQ
 author:
   - "[[昆仑万维]]"
-published:
+published: 
 created: 2025-05-22
-description:
+description: 
 tags:
-  - "clippings"
+  - 天工超级智能体
+  - DeepResearchAgent
+  - GAIA榜单
+  - 信源可追溯
+  - 自动化澄清需求
+  - 搭建个人知识库
 ---
 Original 昆仑万维 *2025年05月22日 08:01*
 

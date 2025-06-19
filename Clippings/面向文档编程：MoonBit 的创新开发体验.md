@@ -1,13 +1,14 @@
 ---
-title: "面向文档编程：MoonBit 的创新开发体验"
-source: "https://mp.weixin.qq.com/s/xNh8XEgp95lMDjdWtmbr6g"
+title: 面向文档编程：MoonBit 的创新开发体验
+source: https://mp.weixin.qq.com/s/xNh8XEgp95lMDjdWtmbr6g
 author:
   - "[[东阳]]"
-published:
+published: 
 created: 2025-05-30
-description: "MoonBit正式推出“面向文档编程”（Document-Oriented Programming）的创新概念。"
+description: MoonBit正式推出“面向文档编程”（Document-Oriented Programming）的创新概念。
 tags:
-  - "clippings"
+  - moonbit
+  - 面向文档编程
 ---
 Original 东阳 [OSC开源社区](https://mp.weixin.qq.com/s/)
 
