@@ -1,13 +1,16 @@
 ---
-title: "和顶尖的AI产品经理聊了聊"
-source: "https://mp.weixin.qq.com/s/uGkg3Il_hraOP85UszFAPg"
+title: 和顶尖的AI产品经理聊了聊
+source: https://mp.weixin.qq.com/s/uGkg3Il_hraOP85UszFAPg
 author:
   - "[[高手咨询]]"
-published:
+published: 
 created: 2025-06-03
-description: "模型能力是过去的Product（产品），研发是算法，数据和评估标准是PRD"
+description: 模型能力是过去的Product（产品），研发是算法，数据和评估标准是PRD
 tags:
-  - "clippings"
+  - 连续创业者
+  - 好数据的定义
+  - 胜在认知
+  - 双边网络效应
 ---
 Original 高手咨询 *2025年05月27日 18:30*
 

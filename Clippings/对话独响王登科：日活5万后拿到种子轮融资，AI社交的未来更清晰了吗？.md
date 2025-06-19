@@ -1,13 +1,15 @@
 ---
-title: "对话独响王登科：日活5万后拿到种子轮融资，AI社交的未来更清晰了吗？"
-source: "https://mp.weixin.qq.com/s/dSwZgV8OzOJ-sA5dc6Hg3w"
+title: 对话独响王登科：日活5万后拿到种子轮融资，AI社交的未来更清晰了吗？
+source: https://mp.weixin.qq.com/s/dSwZgV8OzOJ-sA5dc6Hg3w
 author:
   - "[[Summer]]"
-published:
+published: 
 created: 2025-05-13
-description: "“每个人都最终难逃孤独，但我希望独响能多少解决一下这个问题。”"
+description: “每个人都最终难逃孤独，但我希望独响能多少解决一下这个问题。”
 tags:
-  - "clippings"
+  - 独响
+  - ai社交
+  - 角色性格偏离
 ---
 ![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/5gR6KWHNb7Qp45a0aia4eNZuHGpLibUqTDC8cRR4AtJhjqG9hbojAa8u3u1XWCHaE9CxV4GpLwn8jthtp2dKXFBA/0?wx_fmt=jpeg)
 

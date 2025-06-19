@@ -1,13 +1,25 @@
 ---
-title: "硅谷VC疯抢的AI搜索黑马：11人团队，靠华人天才再造一个OpenAI？"
-source: "https://mp.weixin.qq.com/s/AlA5fEOgYUxXZmMEUw4cUQ"
+title: 硅谷VC疯抢的AI搜索黑马：11人团队，靠华人天才再造一个OpenAI？
+source: https://mp.weixin.qq.com/s/AlA5fEOgYUxXZmMEUw4cUQ
 author:
   - "[[硅兔君]]"
-published:
+published: 
 created: 2025-06-09
-description: "杀死谷歌！硅谷华人靠AI搜索改写规则，千亿广告市场巨震。"
+description: 杀死谷歌！硅谷华人靠AI搜索改写规则，千亿广告市场巨震。
 tags:
-  - "clippings"
+  - ai搜索
+  - 目录时代
+  - 关键词时代
+  - 场景时代
+  - 认知时代
+  - Correlate
+  - 求职助手
+  - Moonhub
+  - 招聘搜索引擎
+  - Class-Companion
+  - K12作业批改工具
+  - Ambience-Healthcare
+  - ai医生助理
 ---
 Original 硅兔君 [硅兔君](https://mp.weixin.qq.com/s/)
 
