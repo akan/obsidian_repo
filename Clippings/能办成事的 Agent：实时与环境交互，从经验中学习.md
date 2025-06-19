@@ -15,6 +15,7 @@ tags:
   - 生成工具
   - 生成workflow
   - 生成agent
+  - 开源微调
 ---
 **【本文是笔者在 A2M 互联网架构与 AI 技术峰会 [图灵大模型技术专场](https://zhida.zhihu.com/search?content_id=259087041&content_type=Article&match_order=1&q=%E5%9B%BE%E7%81%B5%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E5%9C%BA&zhida_source=entity) 的受邀报告。】**
 
