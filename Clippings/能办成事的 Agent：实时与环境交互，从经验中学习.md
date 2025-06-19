@@ -1,13 +1,16 @@
 ---
-title: "能办成事的 Agent：实时与环境交互，从经验中学习"
-source: "https://zhuanlan.zhihu.com/p/1917272386589402419?share_code=1ozncdd1q5I6U&utm_psn=1917957847779620284"
+title: 能办成事的 Agent：实时与环境交互，从经验中学习
+source: https://zhuanlan.zhihu.com/p/1917272386589402419?share_code=1ozncdd1q5I6U&utm_psn=1917957847779620284
 author:
   - "[[李博杰​​​中国科学技术大学 计算机软件与理论博士]]"
-published:
+published: 
 created: 2025-06-17
-description: "【本文是笔者在 A2M 互联网架构与 AI 技术峰会图灵大模型技术专场的受邀报告。】 下载 PDF：《能办成事的 Agent：实时与环境交互，从经验中学习》大家好，欢迎来到 A2M 峰会。今天我分享的主题是 “能办成事的 Age…"
+description: 【本文是笔者在 A2M 互联网架构与 AI 技术峰会图灵大模型技术专场的受邀报告。】 下载 PDF：《能办成事的 Agent：实时与环境交互，从经验中学习》大家好，欢迎来到 A2M 峰会。今天我分享的主题是 “能办成事的 Age…
 tags:
-  - "clippings"
+  - A2M
+  - pine-ai
+  - 从经验中学习
+  - 观察-思考-行动
 ---
 **【本文是笔者在 A2M 互联网架构与 AI 技术峰会 [图灵大模型技术专场](https://zhida.zhihu.com/search?content_id=259087041&content_type=Article&match_order=1&q=%E5%9B%BE%E7%81%B5%E5%A4%A7%E6%A8%A1%E5%9E%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E5%9C%BA&zhida_source=entity) 的受邀报告。】**
 

@@ -9,6 +9,7 @@ description: MoonBit正式推出“面向文档编程”（Document-Oriented Pro
 tags:
   - moonbit
   - 面向文档编程
+  - MoonBit的构建系统
 ---
 Original 东阳 [OSC开源社区](https://mp.weixin.qq.com/s/)
 
