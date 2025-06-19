@@ -1,13 +1,15 @@
 ---
-title: "红杉资本专访OpenAI Codex 团队：从编程自动补全到异步自主智能体 | 附全文1.5万字+视频"
-source: "https://mp.weixin.qq.com/s/kfGR9FnwSQ6EPX-mctaHwg"
+title: 红杉资本专访OpenAI Codex 团队：从编程自动补全到异步自主智能体 | 附全文1.5万字+视频
+source: https://mp.weixin.qq.com/s/kfGR9FnwSQ6EPX-mctaHwg
 author:
   - "[[天空之城城主]]"
-published:
+published: 
 created: 2025-06-11
-description:
+description: 
 tags:
-  - "clippings"
+  - 异步自主智能体
+  - 结对编程
+  - 任务委派
 ---
 天空之城城主 [Web3天空之城](https://mp.weixin.qq.com/s/)
 
