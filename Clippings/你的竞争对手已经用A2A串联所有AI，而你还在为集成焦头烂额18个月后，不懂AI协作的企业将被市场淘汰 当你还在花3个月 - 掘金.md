@@ -1,12 +1,17 @@
 ---
-title: "你的竞争对手已经用A2A串联所有AI，而你还在为集成焦头烂额18个月后，不懂AI协作的企业将被市场淘汰 当你还在花3个月 - 掘金"
-source: "https://juejin.cn/post/7503136487375421459"
-author:
+title: 你的竞争对手已经用A2A串联所有AI，而你还在为集成焦头烂额18个月后，不懂AI协作的企业将被市场淘汰 当你还在花3个月 - 掘金
+source: https://juejin.cn/post/7503136487375421459
+author: 
 published: 2025-05-12
 created: 2025-05-13
-description: "18个月后，不懂AI协作的企业将被市场淘汰 当你还在花3个月时间让两个AI系统\"说上话\"时，你的竞争对手已经用A2A协议在3天内连接了17个AI代理，构建起了全自动的智能业务网络。 一个真实的恐怖故事"
+description: 18个月后，不懂AI协作的企业将被市场淘汰 当你还在花3个月时间让两个AI系统"说上话"时，你的竞争对手已经用A2A协议在3天内连接了17个AI代理，构建起了全自动的智能业务网络。 一个真实的恐怖故事
 tags:
-  - "clippings"
+  - A2A
+  - 拥抱代理能力
+  - 基于现有标准
+  - 默认安全
+  - 支持长时间运行的任务
+  - 模态无关
 ---
 ![横幅](https://p6-piu.byteimg.com/tos-cn-i-8jisjyls3a/0bdb448b29434da59b1e21fcb970e11f~tplv-8jisjyls3a-image.image) ![](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/c676d36a15f248e8aedb339deddadb90~tplv-8jisjyls3a-image.image)
 

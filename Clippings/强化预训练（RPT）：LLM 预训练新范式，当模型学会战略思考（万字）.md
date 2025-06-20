@@ -1,13 +1,14 @@
 ---
-title: "强化预训练（RPT）：LLM 预训练新范式，当模型学会战略思考（万字）"
-source: "https://mp.weixin.qq.com/s/cNc4QtiSmphD15MXfEEEpA"
+title: 强化预训练（RPT）：LLM 预训练新范式，当模型学会战略思考（万字）
+source: https://mp.weixin.qq.com/s/cNc4QtiSmphD15MXfEEEpA
 author:
   - "[[肆零柒]]"
-published:
+published: 
 created: 2025-06-12
-description: "RPT通过将传统的预测 token 重构为定义任务，交付结果。这种推理范式的转变，让模型不仅是在预测 token，而在自己定义“任务”，推理“任务”。这一过程赋予了模型类似人类的战略思考模式。它不再只是机械地记忆和预测，而是在直接交付结果！"
+description: RPT通过将传统的预测 token 重构为定义任务，交付结果。这种推理范式的转变，让模型不仅是在预测 token，而在自己定义“任务”，推理“任务”。这一过程赋予了模型类似人类的战略思考模式。它不再只是机械地记忆和预测，而是在直接交付结果！
 tags:
-  - "clippings"
+  - RPT
+  - 强化学习预训练
 ---
 Original 肆零柒 [觉察流](https://mp.weixin.qq.com/s/)
 

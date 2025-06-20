@@ -1,12 +1,14 @@
 ---
-title: "Tiny Agents：用50行代码打造基于MCP的AI代理引言 过去几周，我深入研究了MCP（Model Contex - 掘金"
-source: "https://juejin.cn/post/7497534120420474918"
-author:
+title: Tiny Agents：用50行代码打造基于MCP的AI代理引言 过去几周，我深入研究了MCP（Model Contex - 掘金
+source: https://juejin.cn/post/7497534120420474918
+author: 
 published: 2025-04-27
 created: 2025-05-07
-description: "引言 过去几周，我深入研究了MCP（Model Context Protocol，模型上下文协议），试图理解它为何备受关注。我的总结是：MCP简单却强大，它是一个标准API，用于暴露可以连接到大语言模"
+description: 引言 过去几周，我深入研究了MCP（Model Context Protocol，模型上下文协议），试图理解它为何备受关注。我的总结是：MCP简单却强大，它是一个标准API，用于暴露可以连接到大语言模
 tags:
-  - "clippings"
+  - MCP
+  - 模型上下文协议
+  - AI代理
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 

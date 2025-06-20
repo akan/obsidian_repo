@@ -1,12 +1,16 @@
 ---
-title: "年赚三亿美金、估值近百亿，Cursor 竟无护城河？在 AI 驱动的编程革命中，Anysphere 旗下的 Cursor - 掘金"
-source: "https://juejin.cn/post/7505369725331030035"
-author:
+title: 年赚三亿美金、估值近百亿，Cursor 竟无护城河？在 AI 驱动的编程革命中，Anysphere 旗下的 Cursor - 掘金
+source: https://juejin.cn/post/7505369725331030035
+author: 
 published: 2025-05-19
 created: 2025-05-19
-description: "在 AI 驱动的编程革命中，Anysphere 旗下的 Cursor 以惊人速度崛起。这款 AI 代码编辑器在推出仅 20 个月后，年度经常性收入（ARR）达到 1 亿美元，两年内更是飙升至 3 亿美"
+description: 在 AI 驱动的编程革命中，Anysphere 旗下的 Cursor 以惊人速度崛起。这款 AI 代码编辑器在推出仅 20 个月后，年度经常性收入（ARR）达到 1 亿美元，两年内更是飙升至 3 亿美
 tags:
-  - "clippings"
+  - cursor
+  - ai辅助编程
+  - 人类控制优先
+  - 慢聘快成
+  - 任务分解
 ---
 ![横幅](https://p6-piu.byteimg.com/tos-cn-i-8jisjyls3a/0bdb448b29434da59b1e21fcb970e11f~tplv-8jisjyls3a-image.image) ![](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/c676d36a15f248e8aedb339deddadb90~tplv-8jisjyls3a-image.image)
 
