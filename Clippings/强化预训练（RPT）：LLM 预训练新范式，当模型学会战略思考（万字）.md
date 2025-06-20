@@ -9,6 +9,7 @@ description: RPT通过将传统的预测 token 重构为定义任务，交付结
 tags:
   - RPT
   - 强化学习预训练
+  - next-token-reasoning
 ---
 Original 肆零柒 [觉察流](https://mp.weixin.qq.com/s/)
 
