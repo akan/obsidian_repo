@@ -1,13 +1,16 @@
 ---
-title: "Agent进入下一篇章！Alita：不靠人工预设，自己造工具，成绩碾压OpenAI"
-source: "https://mp.weixin.qq.com/s/SUVextzhVu2UJ7OoauhSHQ"
+title: Agent进入下一篇章！Alita：不靠人工预设，自己造工具，成绩碾压OpenAI
+source: https://mp.weixin.qq.com/s/SUVextzhVu2UJ7OoauhSHQ
 author:
   - "[[编辑部]]"
-published:
+published: 
 created: 2025-05-28
-description:
+description: 
 tags:
-  - "clippings"
+  - Alita
+  - Manager-Agent大脑
+  - Web-Agent
+  - MCP工具箱
 ---
 Original 编辑部 [深度学习自然语言处理](https://mp.weixin.qq.com/s/)
 
