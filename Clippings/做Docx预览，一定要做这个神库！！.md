@@ -1,13 +1,15 @@
 ---
-title: "做Docx预览，一定要做这个神库！！"
-source: "https://juejin.cn/post/7493733975779917861"
+title: 做Docx预览，一定要做这个神库！！
+source: https://juejin.cn/post/7493733975779917861
 author:
   - "[[独立开阀者_FwtCoder]]"
 published: 2025-04-17
 created: 2025-05-28
-description: "来源：沉浸式趣谈 只需几行代码，你就能在浏览器中完美预览 Word 文档，甚至连表格样式、页眉页脚都原汁原味地呈现出来。 接下来，给大家分享两个 Docx 预览的库： docx-preview VS"
+description: 来源：沉浸式趣谈 只需几行代码，你就能在浏览器中完美预览 Word 文档，甚至连表格样式、页眉页脚都原汁原味地呈现出来。 接下来，给大家分享两个 Docx 预览的库： docx-preview VS
 tags:
-  - "clippings"
+  - docx-preview
+  - mammoth
+  - 预览Word文档
 ---
 ![横幅](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/2fd8e96805614492bb2076e3eca5f7a5~tplv-8jisjyls3a-2:0:0:q75.image) ![](https://p26-piu.byteimg.com/tos-cn-i-8jisjyls3a/0d6404b693834ec1a4d258177bb8baf2~tplv-8jisjyls3a-2:0:0:q75.image)
 
