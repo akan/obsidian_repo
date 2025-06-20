@@ -1,13 +1,16 @@
 ---
-title: "AI 创业者的反思：那些被忽略的「快」与「长」"
-source: "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&chksm=c1bd84cba3d84c7774f51230f1dd0b6c73f5d49beed3a8d135745895b365b2aa78567e86366a&idx=2&mid=2247516797&sn=3daf317c2e5755e5223e30c8fab6151b#rd"
+title: AI 创业者的反思：那些被忽略的「快」与「长」
+source: https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&chksm=c1bd84cba3d84c7774f51230f1dd0b6c73f5d49beed3a8d135745895b365b2aa78567e86366a&idx=2&mid=2247516797&sn=3daf317c2e5755e5223e30c8fab6151b#rd
 author:
   - "[[Founder Park]]"
-published:
+published: 
 created: 2025-06-12
-description: "关键在快、长、智带来的 C 端体验变量。"
+description: 关键在快、长、智带来的 C 端体验变量。
 tags:
-  - "clippings"
+  - TAM总体潜在市场
+  - value-creation
+  - value-capture
+  - 快-长-智
 ---
 Founder Park [Founder Park](https://mp.weixin.qq.com/)
 
