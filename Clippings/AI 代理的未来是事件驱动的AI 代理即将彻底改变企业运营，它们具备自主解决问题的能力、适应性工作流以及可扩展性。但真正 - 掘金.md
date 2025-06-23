@@ -9,6 +9,7 @@ tags:
   - EDA-扩展代理
   - 事件驱动架构
   - 智能代理颠覆了传统的控制逻辑
+  - 基于上下文的工作流
 ---
 ![横幅](https://p9-piu.byteimg.com/tos-cn-i-8jisjyls3a/80e551ec95e54d3e94bf0f1cdad71e51~tplv-8jisjyls3a-image.image) ![](https://p3-piu.byteimg.com/tos-cn-i-8jisjyls3a/ef1b479729b54febacdf28345ebe61af~tplv-8jisjyls3a-image.image)
 
