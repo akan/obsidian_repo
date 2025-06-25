@@ -1,17 +1,20 @@
 ---
-title: "AI Agent 大爆发背后，YC发现了 90% 都跑不通的真问题"
-source: "https://mp.weixin.qq.com/s/AEXQJWvgmHCYHsKmFpwhsw"
+title: AI Agent 大爆发背后，YC发现了 90% 都跑不通的真问题
+source: https://mp.weixin.qq.com/s/AEXQJWvgmHCYHsKmFpwhsw
 author:
   - "[[Cat Pi]]"
-published:
+published: 
 created: 2025-06-25
-description: "人人都在做“聪明的Agent”，真正的稀缺，是能落地的笨办法。"
+description: 人人都在做“聪明的Agent”，真正的稀缺，是能落地的笨办法。
 tags:
-  - "AI创业"
-  - "流程设计"
-  - "资源争夺"
-  - "YC AI Startup School 揭示了AI Agent热潮下90%项目无法落地的核心问题，强调流程设计、资源控制与系统构建能力的重要性。"
-abstract: "YC AI Startup School 指出，AI Agent 创业的成功关键在于流程设计与系统构建，而非单纯依赖模型能力。"
+  - AI创业
+  - 流程设计
+  - 资源争夺
+  - YC
+  - AI
+  - Startup
+  - School
+abstract: YC AI Startup School 指出，AI Agent 创业的成功关键在于流程设计与系统构建，而非单纯依赖模型能力。
 ---
 Original Cat Pi *2025年06月23日 10:43*
 
