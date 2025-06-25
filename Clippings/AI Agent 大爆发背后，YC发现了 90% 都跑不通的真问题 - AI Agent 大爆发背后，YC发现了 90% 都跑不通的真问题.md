@@ -13,7 +13,7 @@ tags:
   - YC
   - AI
   - Startup
-  - School
+  - 可评估的agent
 abstract: YC AI Startup School 指出，AI Agent 创业的成功关键在于流程设计与系统构建，而非单纯依赖模型能力。
 ---
 Original Cat Pi *2025年06月23日 10:43*
