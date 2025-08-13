@@ -11,7 +11,7 @@
       "adapter": "transformers",
       "transformers": {
         "legacy_transformers": true,
-        "model_key": "Xenova/jina-embeddings-v2-base-zh"
+        "model_key": "TaylorAI/bge-micro-v2"
       },
       "TaylorAI/bge-micro-v2": {},
       "Xenova/jina-embeddings-v2-base-zh": {}
