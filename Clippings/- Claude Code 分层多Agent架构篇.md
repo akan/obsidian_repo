@@ -29,7 +29,7 @@ https://github.com/shareAI-lab/analysis\_claude\_code
 
 Claude Code采用了一种创新的分层多Agent架构，通过主Agent和SubAgent的协作来处理复杂任务：
 
-```flowchart
+```
 否是用户请求主Agent nO函数是否调用Task工具直接处理工具调用Task工具 p_2对象创建SubAgent I2A函数Agent生命周期管理并发执行协调 UH1函数结果合成器 KN5函数返回合成结果返回处理结果
 ```
 
