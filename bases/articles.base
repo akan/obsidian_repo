@@ -7,3 +7,5 @@ views:
       - tags
       - abstract
       - file.links
+  - type: cards
+    name: 视图
