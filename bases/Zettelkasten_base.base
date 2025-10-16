@@ -1,0 +1,59 @@
+name: Zettelkasten 卡片盒数据库
+description: 管理 Zettelkasten 文件夹中的原子笔记卡片
+filters:
+  and:
+    - file.inFolder("Zettelkasten")
+    - file.extension = "md"
+    - file.name != ""
+formulas:
+  随时间变化的随机数: (( (number(this.时间戳 UID) * 100011979 + 500067713) % 900066731 ) * ( (now().minute * 800067089 + 800068411) % 800053967 ) + 900067309) % 900066571
+properties:
+  file.name:
+    displayName: 文件名
+  file.ctime:
+    type: date
+    displayName: 创建时间
+  tags:
+    type: tags
+    displayName: 标签
+  时间戳UID:
+    type: text
+    displayName: 时间戳 UID
+  随时间变化的随机数:
+    type: number
+    displayName: 随机排序
+views:
+  - type: table
+    name: 卡片表格视图
+    order:
+      - file.ctime
+      - file.name
+    sort: []
+    columns:
+      - file.name
+      - file.ctime
+      - tags
+      - 时间戳UID
+  - type: card
+    name: 卡片随机视图
+    order:
+      - 随时间变化的随机数
+    sort: []
+    cardTemplate:
+      front: |
+        ### {{file.name}}
+
+        **创建时间**：{{file.ctime}}
+
+        {{#if tags}}
+        **标签**：{{tags}}
+        {{/if}}
+
+        {{#if 时间戳UID}}
+        **UID**：{{时间戳UID}}
+        {{/if}}
+      back: |
+        {{file.content}}
+
+        ---
+        *随机排序号：{{随时间变化的随机数}}*

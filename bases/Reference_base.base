@@ -1,0 +1,30 @@
+name: 参考资料数据库
+description: 管理 Reference 文件夹中的参考资料文档
+filters:
+  and:
+    - file.inFolder("Reference")
+    - file.name != ""
+properties:
+  file.name:
+    displayName: 文件名
+  file.ctime:
+    type: date
+    displayName: 创建时间
+  file.mtime:
+    type: date
+    displayName: 修改时间
+  AI摘要:
+    type: text
+    displayName: AI 摘要
+views:
+  - type: table
+    name: 参考资料概览
+    order:
+      - file.ctime
+      - file.name
+    sort: []
+    columns:
+      - file.name
+      - file.ctime
+      - file.mtime
+      - AI摘要

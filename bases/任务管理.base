@@ -1,0 +1,167 @@
+name: "任务管理数据库"
+description: "管理日常任务和待办事项"
+
+filters:
+  and:
+    - file.hasTag("任务")
+    - file.name != ""
+
+properties:
+  优先级:
+    displayName: "优先级"
+    type: "select"
+    options: ["紧急重要", "重要不紧急", "紧急不重要", "不重要不紧急"]
+  状态:
+    displayName: "状态"
+    type: "select"
+    options: ["待开始", "进行中", "已完成", "已暂停", "已取消"]
+  任务类型:
+    displayName: "任务类型"
+    type: "select"
+    options: ["工作", "学习", "生活", "创作", "其他"]
+  截止日期:
+    displayName: "截止日期"
+    type: "date"
+  预估时间:
+    displayName: "预估时间 (小时)"
+    type: "number"
+  实际时间:
+    displayName: "实际时间 (小时)"
+    type: "number"
+  完成日期:
+    displayName: "完成日期"
+    type: "date"
+  负责人:
+    displayName: "负责人"
+  项目关联:
+    displayName: "关联项目"
+  难度:
+    displayName: "难度"
+    type: "select"
+    options: ["简单", "中等", "困难", "极难"]
+  重复设置:
+    displayName: "重复设置"
+    type: "select"
+    options: ["不重复", "每日", "每周", "每月", "每年"]
+
+formulas:
+  紧急程度: 'if(优先级 == "紧急重要", "🔴 紧急重要", if(优先级 == "重要不紧急", "🟡 重要不紧急", if(优先级 == "紧急不重要", "🟠 紧急不重要", "⚪ 不重要不紧急")))'
+  状态显示: 'if(状态 == "已完成", "✅ 已完成", if(状态 == "进行中", "🔄 进行中", if(状态 == "已暂停", "⏸️ 已暂停", if(状态 == "已取消", "❌ 已取消", "⏳ 待开始"))))'
+  是否逾期: '状态 != "已完成" and 截止日期 < today()'
+  逾期标记: 'if(是否逾期, "⚠️ 已逾期", "")'
+  剩余天数: '(截止日期 - today()).toFixed(0)'
+  时间效率: 'if(实际时间 > 0 and 预估时间 > 0, (预估时间 / 实际时间).toFixed(2), 0)'
+  完成用时: 'if(状态 == "已完成" and 实际时间 > 0, 实际时间 + "小时", "")'
+  今日任务: '截止日期 == today() and 状态 != "已完成"'
+  本周任务: '截止日期 >= today() and 截止日期 <= today().plusDays(7) and 状态 != "已完成"'
+
+views:
+  - type: kanban
+    name: "任务看板"
+    groupBy: 状态
+    order:
+      - 优先级
+      - 截止日期
+    sort:
+      - 优先级: "asc"
+      - 截止日期: "asc"
+    filters:
+      and:
+        - 状态 != "已完成"
+        - 状态 != "已取消"
+
+  - type: table
+    name: "今日任务"
+    filters:
+      and:
+        - '截止日期 == today()'
+        - '状态 != "已完成"'
+        - '状态 != "已取消"'
+    order:
+      - 优先级
+      - 任务类型
+    sort:
+      - 优先级: "asc"
+      - 任务类型: "asc"
+    columns:
+      - file.name
+      - 优先级
+      - 紧急程度
+      - 任务类型
+      - 预估时间
+      - 截止时间
+      - 状态显示
+
+  - type: table
+    name: "本周任务"
+    filters:
+      and:
+        - '截止日期 >= today()'
+        - '截止日期 <= today().plusDays(7)'
+        - '状态 != "已完成"'
+        - '状态 != "已取消"'
+    order:
+      - 截止日期
+      - 优先级
+    sort:
+      - 截止日期: "asc"
+      - 优先级: "asc"
+    columns:
+      - file.name
+      - 任务类型
+      - 优先级
+      - 截止日期
+      - 剩余天数
+      - 预估时间
+      - 状态显示
+      - 逾期标记
+
+  - type: table
+    name: "四象限视图"
+    filters:
+      and:
+        - '状态 != "已完成"'
+        - '状态 != "已取消"'
+    order:
+      - 优先级
+      - 截止日期
+    sort:
+      - 优先级: "asc"
+      - 截止日期: "asc"
+    columns:
+      - file.name
+      - 优先级
+      - 紧急程度
+      - 任务类型
+      - 截止日期
+      - 剩余天数
+      - 预估时间
+      - 逾期标记
+
+  - type: table
+    name: "已完成任务"
+    filters:
+      and:
+        - '状态 == "已完成"'
+    order:
+      - 完成日期
+      - 实际时间
+    sort:
+      - 完成日期: "desc"
+      - 实际时间: "desc"
+    columns:
+      - file.name
+      - 任务类型
+      - 完成日期
+      - 预估时间
+      - 实际时间
+      - 时间效率
+      - 优先级
+
+  - type: calendar
+    name: "任务日历"
+    dateProperty: 截止日期
+    filters:
+      and:
+        - '状态 != "已完成"'
+        - '状态 != "已取消"'
