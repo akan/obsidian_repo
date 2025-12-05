@@ -11,7 +11,8 @@ glm4.6的规划能力ok，代码生成能力偏弱，目前还没有配置skills
 3、auto-coder+deepseek3.2 +workflow+agent
 用时2天？成本24.59
 
-![[Pasted image 20251204142517.png]]
+⚠️upload failed, check dev console
+
 
 ![[Pasted image 20251204142640.png]]
 
