@@ -13,12 +13,17 @@ glm4.6的规划能力ok，代码生成能力偏弱，目前还没有配置skills
 
 ![](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205105230499.png)
 
-![[Pasted image 20251204142640.png]]
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114008211.png)
 
-![[Pasted image 20251204142708.png]]
-![[Pasted image 20251204142746.png]]
-![[Pasted image 20251204142819.png]]
-![[Pasted image 20251204142922.png]]
+
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114207002.png)
+
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114434093.png)
+
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114704595.png)
+
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114827844.png)
+
 什么任务？
 vue-copilotkit去年做了一版，大约是1.0.1版，目前Copilotkit已经升级到1.10.6+了。
 主线需求，vue-copilotkit需要升级到与react新版兼容，
@@ -27,19 +32,24 @@ vue-copilotkit去年做了一版，大约是1.0.1版，目前Copilotkit已经升
 如何做？
 1、设计目录结构
 三个目录的好处，1、提供足够上下文，2、出方案有明确参考，debug有前后端代码
-![[Pasted image 20251204115557.png]]
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114900758.png)
+
 
 2、初始化项目，
 claude.md
-![[Pasted image 20251204140300.png]]
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114958770.png)
+
 autocoder RULES.md
-![[Pasted image 20251204140440.png]]
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205115018682.png)
+
 
 antigravity其实也需要claude.md之类的做指导。
 
-![[Pasted image 20251204140539.png]]
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205114928896.png)
 
-![[Pasted image 20251204140711.png]]
+
+![image.png](https://raw.githubusercontent.com/akan/wangzhan/main/pic/20251205115043920.png)
+
 
 ## 总结与反思
 好的开始，是成功的一半。
