@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实施方法：项目设计</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 25pt;
+        }
+
+        .title {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            gap: 30pt;
+        }
+
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .design-principle {
+            background: rgba(39, 120, 132, 0.7);
+            border-radius: 12pt;
+            padding: 20pt;
+            margin-bottom: 20pt;
+        }
+
+        .principle-title {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 12pt;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10pt;
+        }
+
+        .benefit-icon {
+            width: 20pt;
+            height: 20pt;
+            background: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            margin-top: 2pt;
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1C2833;
+            flex-shrink: 0;
+        }
+
+        .benefit-text {
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+
+        .directory-structure {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12pt;
+            padding: 20pt;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .structure-title {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 15pt;
+        }
+
+        .structure-content {
+            display: flex;
+            flex: 1;
+            gap: 15pt;
+        }
+
+        .structure-image {
+            flex: 1.5;
+            border-radius: 8pt;
+            overflow: hidden;
+        }
+
+        .structure-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8pt;
+        }
+
+        .structure-benefits {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .benefit-point {
+            background: rgba(39, 120, 132, 0.5);
+            border-radius: 8pt;
+            padding: 12pt;
+            margin-bottom: 10pt;
+        }
+
+        .benefit-point:last-child {
+            margin-bottom: 0;
+        }
+
+        .benefit-point-text {
+            font-size: 12pt;
+            line-height: 1.4;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 150pt;
+            height: 150pt;
+            top: -40pt;
+            right: -40pt;
+        }
+
+        .shape2 {
+            width: 80pt;
+            height: 80pt;
+            bottom: -20pt;
+            left: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">实施方法：项目设计</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="design-principle">
+                    <div class="principle-title">目录结构设计理念</div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <div class="benefit-text">
+                            <strong>充足上下文</strong>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <div class="benefit-text">
+                            <strong>明确参考方案</strong>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <div class="benefit-text">
+                            <strong>Debug支持</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory-structure">
+                    <div class="structure-title">项目目录结构</div>
+                    <div class="structure-content">
+                        <div class="structure-image">
+                            <img src="images/20251205114900758.png" alt="项目目录结构">
+                        </div>
+                        <div class="structure-benefits">
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>三目录设计</strong><br>
+                                    backend + frontend + vue-copilotkit
+                                </div>
+                            </div>
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>配置分离</strong><br>
+                                    CLAUDE.md + RULES.md
+                                </div>
+                            </div>
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>AI指导</strong><br>
+                                    明确的开发规范和约束
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="design-principle">
+                    <div class="principle-title">关键成功因素</div>
+                    <div class="benefit-point-text" style="font-size: 14pt; line-height: 1.4;">
+                        项目初始化和AI工具的正确配置，是后续顺利进行的基础。好的开始是成功的一半。
+                    </div>
+                </div>
+
+                <div class="directory-structure" style="margin-top: 20pt;">
+                    <div class="structure-title">配置文档示例</div>
+                    <div class="structure-content">
+                        <div class="structure-image">
+                            <img src="images/20251205114958770.png" alt="CLAUDE.md 配置">
+                        </div>
+                        <div class="structure-image">
+                            <img src="images/20251205115018682.png" alt="RULES.md 配置">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

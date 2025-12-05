@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI辅助编程进入巡航模式 - 增强版演示文稿</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #1C2833;
+            color: white;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        .presentation-container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .slide {
+            width: 720pt;
+            height: 405pt;
+            margin: 20pt auto;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            border-radius: 12pt;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10pt 30pt rgba(0,0,0,0.3);
+            display: none;
+        }
+
+        .slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20pt); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 20pt;
+            right: 30pt;
+            font-size: 14pt;
+            color: #AAB7B8;
+            background: rgba(0,0,0,0.3);
+            padding: 5pt 12pt;
+            border-radius: 20pt;
+            z-index: 10;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30pt 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.8);
+            padding: 20pt;
+            z-index: 100;
+        }
+
+        .nav-btn {
+            background: #F39C12;
+            color: #1C2833;
+            border: none;
+            padding: 12pt 24pt;
+            margin: 0 10pt;
+            border-radius: 25pt;
+            font-size: 14pt;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: #E67E22;
+            transform: translateY(-2pt);
+        }
+
+        .nav-btn:disabled {
+            background: #7F8C8D;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-info {
+            text-align: center;
+            margin: 20pt 0;
+            color: #AAB7B8;
+            font-size: 16pt;
+        }
+
+        .progress-bar {
+            width: 100%;
+            max-width: 600pt;
+            height: 8pt;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4pt;
+            margin: 0 auto 20pt;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #F39C12;
+            transition: width 0.3s ease;
+            border-radius: 4pt;
+        }
+
+        @media print {
+            body { background: white; }
+            .slide {
+                margin: 0;
+                page-break-after: always;
+                box-shadow: none;
+                display: block !important;
+            }
+            .navigation, .slide-info, .progress-bar { display: none !important; }
+            .presentation-container { padding: 0; }
+        }
+
+        @media screen and (max-width: 768px) {
+            .slide {
+                width: 90vw;
+                height: 50vw;
+                min-height: 300pt;
+            }
+            .navigation {
+                padding: 10pt;
+            }
+            .nav-btn {
+                padding: 8pt 16pt;
+                font-size: 12pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-info">
+        <strong>AI辅助编程进入巡航模式</strong> - 增强版演示文稿
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+    </div>
+
+    <div class="presentation-container">
+
+        <div class="slide" id="slide-1">
+            
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="tech-icon icon1">function aiAssist() {}</div>
+    <div class="tech-icon icon2">const coding = "cruise";</div>
+    <div class="tech-icon icon3">AI.compute();</div>
+    <div class="tech-icon icon4">while(success) { code(); }</div>
+
+    <div class="slide-content">
+        <h1 class="title">AI辅助编程<br>进入巡航模式</h1>
+        <p class="subtitle">三种主流AI编程工具的实践对比与经验分享</p>
+
+        <div class="comparison-box">
+            <div class="comparison-title">效率对比</div>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <div class="comparison-time">1-2周</div>
+                    <div class="comparison-tool">Claude Code + GLM4.6</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-time">4小时</div>
+                    <div class="comparison-tool">Antigravity + Gemini3 Pro</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-time">2天</div>
+                    <div class="comparison-tool">Auto-coder + Deepseek3.2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">1 / 6</div>
+        </div>
+    
+        <div class="slide" id="slide-2">
+            
+    <div class="accent-shape shape1"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">Vue-CopilotKit 升级项目</h1>
+        </div>
+
+        <div class="content">
+            <div class="left-column">
+                <div class="version-card">
+                    <div class="version-number">1.0.1 → 1.10.6+</div>
+                    <div class="version-text">当前版本 → 目标版本</div>
+                </div>
+
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <div class="requirement-number">1</div>
+                        <div class="requirement-text">
+                            <strong>主线需求：</strong>Vue-CopilotKit 升级到与 React 新版兼容
+                        </div>
+                    </div>
+
+                    <div class="requirement-item">
+                        <div class="requirement-number">2</div>
+                        <div class="requirement-text">
+                            <strong>支线需求：</strong>后端接口优化，支持更多模型切换和功能扩展
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="image-container">
+                    <img src="images/20251205105230499.png" alt="项目概览">
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">2 / 6</div>
+        </div>
+    
+        <div class="slide" id="slide-3">
+            
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">三种AI编程方案对比</h1>
+        </div>
+
+        <div class="comparison-container">
+            <div class="method-card">
+                <div class="method-number">1</div>
+                <div class="method-title">Claude Code + GLM4.6</div>
+                <div class="method-tools">task-master-ai, software-planning-tools, MCP</div>
+                <div class="method-details">
+                    • GLM4.6 规划能力良好<br>
+                    • 代码生成能力偏弱<br>
+                    • 需要配置 skills<br>
+                    • 结合 agent 手工执行 workflow
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">1-2 周</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">60 元/月</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">中</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-card highlight best">
+                <div class="method-number">2</div>
+                <div class="method-title">Antigravity + Gemini3 Pro + Sonnet4.5</div>
+                <div class="method-tools">无需配置 agent, 自动启用 MCP</div>
+                <div class="method-details">
+                    • 体验丝滑流畅<br>
+                    • 开箱即用<br>
+                    • 智能化程度高<br>
+                    • 自动化 workflow 执行
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">4 小时</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">按需计费</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">高</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-number">3</div>
+                <div class="method-title">Auto-coder + Deepseek3.2</div>
+                <div class="method-tools">workflow + agent</div>
+                <div class="method-details">
+                    • 功能完善<br>
+                    • 需要配置 workflow<br>
+                    • 深度学习能力强<br>
+                    • 自定义程度高
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">2 天</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">24.59 元</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">中高</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">3 / 6</div>
+        </div>
+    
+        <div class="slide" id="slide-4">
+            
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">方案实施结果展示</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="screenshots-section">
+                <div class="screenshot-card">
+                    <div class="screenshot-title">项目概览</div>
+                    <div class="screenshot-container">
+                        <img src="images/20251205114008211.png" alt="项目概览">
+                    </div>
+                </div>
+
+                <div class="screenshot-card">
+                    <div class="screenshot-title">接口升级</div>
+                    <div class="screenshot-container">
+                        <img src="images/20251205114207002.png" alt="接口升级">
+                    </div>
+                </div>
+
+                <div class="screenshot-card">
+                    <div class="screenshot-title">功能实现</div>
+                    <div class="screenshot-container">
+                        <img src="images/20251205114434093.png" alt="功能实现">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="info-title">项目关键成果</div>
+                <div class="info-grid">
+                    <div class="info-column">
+                        <div class="info-item">
+                            <div class="info-label">升级完成</div>
+                            <div class="info-text">Vue-CopilotKit 从 1.0.1 成功升级到 1.10.6+</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">兼容性</div>
+                            <div class="info-text">与 React 新版本完全兼容</div>
+                        </div>
+                    </div>
+                    <div class="info-column">
+                        <div class="info-item">
+                            <div class="info-label">后端优化</div>
+                            <div class="info-text">接口灵活化，支持多模型切换</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">效率提升</div>
+                            <div class="info-text">最佳方案仅用 4 小时完成开发</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">4 / 6</div>
+        </div>
+    
+        <div class="slide" id="slide-5">
+            
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">实施方法：项目设计</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="design-principle">
+                    <div class="principle-title">目录结构设计理念</div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">1</div>
+                        <div class="benefit-text">
+                            <strong>充足上下文</strong>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">2</div>
+                        <div class="benefit-text">
+                            <strong>明确参考方案</strong>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">3</div>
+                        <div class="benefit-text">
+                            <strong>Debug支持</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory-structure">
+                    <div class="structure-title">项目目录结构</div>
+                    <div class="structure-content">
+                        <div class="structure-image">
+                            <img src="images/20251205114900758.png" alt="项目目录结构">
+                        </div>
+                        <div class="structure-benefits">
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>三目录设计</strong><br>
+                                    backend + frontend + vue-copilotkit
+                                </div>
+                            </div>
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>配置分离</strong><br>
+                                    CLAUDE.md + RULES.md
+                                </div>
+                            </div>
+                            <div class="benefit-point">
+                                <div class="benefit-point-text">
+                                    <strong>AI指导</strong><br>
+                                    明确的开发规范和约束
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="design-principle">
+                    <div class="principle-title">关键成功因素</div>
+                    <div class="benefit-point-text" style="font-size: 14pt; line-height: 1.4;">
+                        项目初始化和AI工具的正确配置，是后续顺利进行的基础。好的开始是成功的一半。
+                    </div>
+                </div>
+
+                <div class="directory-structure" style="margin-top: 20pt;">
+                    <div class="structure-title">配置文档示例</div>
+                    <div class="structure-content">
+                        <div class="structure-image">
+                            <img src="images/20251205114958770.png" alt="CLAUDE.md 配置">
+                        </div>
+                        <div class="structure-image">
+                            <img src="images/20251205115018682.png" alt="RULES.md 配置">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">5 / 6</div>
+        </div>
+    
+        <div class="slide" id="slide-6">
+            
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">配置对比与项目总结</h1>
+        </div>
+
+        <div class="content-grid">
+            <div class="left-column">
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">CL</div>
+                        <div class="config-title">CLAUDE.md 配置</div>
+                    </div>
+                    <div class="config-content">
+                        <div class="screenshot-thumb">
+                            <img src="images/20251205114928896.png" alt="CLAUDE.md 配置">
+                        </div>
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">特点：</strong><br>
+                            • 项目结构指导<br>
+                            • 开发规范定义<br>
+                            • 约束和约定设置
+                        </div>
+                    </div>
+                </div>
+
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">AU</div>
+                        <div class="config-title">Auto-coder RULES.md</div>
+                    </div>
+                    <div class="config-content">
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">核心配置：</strong><br>
+                            • workflow: "vue-upgrade"<br>
+                            • agent: "deepseek-coder"<br>
+                            • TypeScript + Vue 3 Composition API<br>
+                            • 与 React 版本兼容要求
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">AG</div>
+                        <div class="config-title">Antigrativity 配置</div>
+                    </div>
+                    <div class="config-content">
+                        <div class="screenshot-thumb">
+                            <img src="images/20251205115043920.png" alt="Antigrativity 配置">
+                        </div>
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">优势：</strong><br>
+                            • 无需预配置代理<br>
+                            • 自动启用MCP功能<br>
+                            • 智能化工作流执行<br>
+                            • 开箱即用体验
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-title">
+                        <div class="summary-icon">💡</div>
+                        核心洞察
+                    </div>
+                    <div class="insight-list">
+                        <div class="insight-item">
+                            <span class="insight-highlight">好的开始是成功的一半</span> — 项目初始化和AI工具配置
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-highlight">规划比执行更重要</span> — 正确的AI规划能力
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-highlight">工具选择决定效率</span> — 从2周到4小时的巨大差异
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="slide-number">6 / 6</div>
+        </div>
+    
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="previousSlide()">← 上一张</button>
+        <button class="nav-btn" onclick="toggleFullscreen()">🔳 全屏</button>
+        <button class="nav-btn" onclick="nextSlide()">下一张 →</button>
+        <div style="margin-top: 10pt; color: #AAB7B8; font-size: 12pt;">
+            提示：使用方向键或点击按钮导航，按 F 键全屏
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = 6;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            if (index >= 0 && index < slides.length) {
+                slides[index].classList.add('active');
+                currentSlide = index;
+                updateNavigation();
+                updateProgress();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 0) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        function updateNavigation() {
+            const buttons = document.querySelectorAll('.nav-btn');
+            const prevBtn = buttons[0];
+            const nextBtn = buttons[2];
+
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+        }
+
+        function updateProgress() {
+            const progress = document.getElementById('progress');
+            const percentage = ((currentSlide + 1) / slides.length) * 100;
+            progress.style.width = percentage + '%';
+        }
+
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        // 键盘导航
+        document.addEventListener('keydown', (e) => {
+            switch(e.key) {
+                case 'ArrowRight':
+                case ' ':
+                case 'PageDown':
+                    e.preventDefault();
+                    nextSlide();
+                    break;
+                case 'ArrowLeft':
+                case 'PageUp':
+                    e.preventDefault();
+                    previousSlide();
+                    break;
+                case 'Home':
+                    e.preventDefault();
+                    showSlide(0);
+                    break;
+                case 'End':
+                    e.preventDefault();
+                    showSlide(slides.length - 1);
+                    break;
+                case 'f':
+                case 'F':
+                    e.preventDefault();
+                    toggleFullscreen();
+                    break;
+                case 'Escape':
+                    if (document.fullscreenElement) {
+                        document.exitFullscreen();
+                    }
+                    break;
+            }
+        });
+
+        // 触摸手势支持
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // 向左滑动 - 下一张
+                    nextSlide();
+                } else {
+                    // 向右滑动 - 上一张
+                    previousSlide();
+                }
+            }
+        }
+
+        // 初始化
+        showSlide(0);
+
+        // 自动调整显示比例
+        function adjustSlideScale() {
+            const container = document.querySelector('.presentation-container');
+            const slides = document.querySelectorAll('.slide');
+
+            if (window.innerWidth <= 768) {
+                container.style.transform = 'scale(0.8)';
+                container.style.transformOrigin = 'top center';
+            } else {
+                container.style.transform = 'scale(1)';
+            }
+        }
+
+        window.addEventListener('resize', adjustSlideScale);
+        adjustSlideScale();
+
+        // 预加载图片
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            const preload = new Image();
+            preload.src = img.src;
+        });
+
+        console.log("演示文稿加载完成，共 " + slides.length + " 张幻灯片");
+    </script>
+</body>
+</html>

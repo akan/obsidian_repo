@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三种AI编程方案对比</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 25pt;
+        }
+
+        .title {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .comparison-container {
+            display: flex;
+            flex: 1;
+            gap: 20pt;
+        }
+
+        .method-card {
+            flex: 1;
+            background: rgba(39, 120, 132, 0.6);
+            border-radius: 12pt;
+            padding: 20pt;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border: 2pt solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .method-card.highlight {
+            border-color: #F39C12;
+            background: rgba(39, 120, 132, 0.8);
+        }
+
+        .method-number {
+            position: absolute;
+            top: 15pt;
+            right: 15pt;
+            width: 30pt;
+            height: 30pt;
+            background: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16pt;
+            color: #1C2833;
+        }
+
+        .method-title {
+            font-size: 16pt;
+            font-weight: 600;
+            margin-bottom: 12pt;
+            padding-right: 40pt;
+            line-height: 1.3;
+        }
+
+        .method-tools {
+            font-size: 12pt;
+            font-weight: 500;
+            color: #F39C12;
+            margin-bottom: 12pt;
+            line-height: 1.4;
+        }
+
+        .method-details {
+            font-size: 11pt;
+            line-height: 1.4;
+            margin-bottom: 12pt;
+            flex: 1;
+        }
+
+        .method-metrics {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8pt;
+            padding: 12pt;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8pt;
+            font-size: 11pt;
+        }
+
+        .metric:last-child {
+            margin-bottom: 0;
+        }
+
+        .metric-label {
+            color: #AAB7B8;
+        }
+
+        .metric-value {
+            font-weight: 600;
+            color: #F39C12;
+        }
+
+        .method-card.best .metric-value {
+            color: #2ECC71;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 180pt;
+            height: 180pt;
+            top: -50pt;
+            right: -50pt;
+        }
+
+        .shape2 {
+            width: 100pt;
+            height: 100pt;
+            bottom: -30pt;
+            left: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">三种AI编程方案对比</h1>
+        </div>
+
+        <div class="comparison-container">
+            <div class="method-card">
+                <div class="method-number">1</div>
+                <div class="method-title">Claude Code + GLM4.6</div>
+                <div class="method-tools">task-master-ai, software-planning-tools, MCP</div>
+                <div class="method-details">
+                    • GLM4.6 规划能力良好<br>
+                    • 代码生成能力偏弱<br>
+                    • 需要配置 skills<br>
+                    • 结合 agent 手工执行 workflow
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">1-2 周</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">60 元/月</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">中</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-card highlight best">
+                <div class="method-number">2</div>
+                <div class="method-title">Antigravity + Gemini3 Pro + Sonnet4.5</div>
+                <div class="method-tools">无需配置 agent, 自动启用 MCP</div>
+                <div class="method-details">
+                    • 体验丝滑流畅<br>
+                    • 开箱即用<br>
+                    • 智能化程度高<br>
+                    • 自动化 workflow 执行
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">4 小时</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">按需计费</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">高</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <div class="method-number">3</div>
+                <div class="method-title">Auto-coder + Deepseek3.2</div>
+                <div class="method-tools">workflow + agent</div>
+                <div class="method-details">
+                    • 功能完善<br>
+                    • 需要配置 workflow<br>
+                    • 深度学习能力强<br>
+                    • 自定义程度高
+                </div>
+                <div class="method-metrics">
+                    <div class="metric">
+                        <span class="metric-label">开发时间</span>
+                        <span class="metric-value">2 天</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">成本</span>
+                        <span class="metric-value">24.59 元</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">自动化程度</span>
+                        <span class="metric-value">中高</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

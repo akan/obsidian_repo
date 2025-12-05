@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配置对比与总结</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 25pt;
+        }
+
+        .title {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .content-grid {
+            display: flex;
+            flex: 1;
+            gap: 20pt;
+        }
+
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20pt;
+        }
+
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20pt;
+        }
+
+        .config-card {
+            background: rgba(39, 120, 132, 0.6);
+            border-radius: 12pt;
+            padding: 20pt;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .config-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15pt;
+        }
+
+        .config-icon {
+            width: 40pt;
+            height: 40pt;
+            background: #F39C12;
+            border-radius: 8pt;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1C2833;
+        }
+
+        .config-title {
+            font-size: 18pt;
+            font-weight: 600;
+        }
+
+        .config-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10pt;
+        }
+
+        .screenshot-thumb {
+            border-radius: 8pt;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.2);
+            height: 120pt;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .screenshot-thumb img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 4pt;
+        }
+
+        .summary-card {
+            background: rgba(39, 120, 132, 0.7);
+            border-radius: 12pt;
+            padding: 20pt;
+            margin-top: 20pt;
+        }
+
+        .summary-title {
+            font-size: 20pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 15pt;
+            display: flex;
+            align-items: center;
+        }
+
+        .summary-icon {
+            width: 36pt;
+            height: 36pt;
+            background: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            font-size: 18pt;
+            font-weight: bold;
+            color: #1C2833;
+        }
+
+        .insight-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10pt;
+        }
+
+        .insight-item {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8pt;
+            padding: 12pt 15pt;
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+
+        .insight-highlight {
+            color: #F39C12;
+            font-weight: 600;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 180pt;
+            height: 180pt;
+            top: -50pt;
+            right: -50pt;
+        }
+
+        .shape2 {
+            width: 100pt;
+            height: 100pt;
+            bottom: -30pt;
+            left: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">配置对比与项目总结</h1>
+        </div>
+
+        <div class="content-grid">
+            <div class="left-column">
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">CL</div>
+                        <div class="config-title">CLAUDE.md 配置</div>
+                    </div>
+                    <div class="config-content">
+                        <div class="screenshot-thumb">
+                            <img src="images/20251205114928896.png" alt="CLAUDE.md 配置">
+                        </div>
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">特点：</strong><br>
+                            • 项目结构指导<br>
+                            • 开发规范定义<br>
+                            • 约束和约定设置
+                        </div>
+                    </div>
+                </div>
+
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">AU</div>
+                        <div class="config-title">Auto-coder RULES.md</div>
+                    </div>
+                    <div class="config-content">
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">核心配置：</strong><br>
+                            • workflow: "vue-upgrade"<br>
+                            • agent: "deepseek-coder"<br>
+                            • TypeScript + Vue 3 Composition API<br>
+                            • 与 React 版本兼容要求
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="config-card">
+                    <div class="config-header">
+                        <div class="config-icon">AG</div>
+                        <div class="config-title">Antigrativity 配置</div>
+                    </div>
+                    <div class="config-content">
+                        <div class="screenshot-thumb">
+                            <img src="images/20251205115043920.png" alt="Antigrativity 配置">
+                        </div>
+                        <div style="font-size: 12pt; line-height: 1.4;">
+                            <strong style="color: #F39C12;">优势：</strong><br>
+                            • 无需预配置代理<br>
+                            • 自动启用MCP功能<br>
+                            • 智能化工作流执行<br>
+                            • 开箱即用体验
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-title">
+                        <div class="summary-icon">💡</div>
+                        核心洞察
+                    </div>
+                    <div class="insight-list">
+                        <div class="insight-item">
+                            <span class="insight-highlight">好的开始是成功的一半</span> — 项目初始化和AI工具配置
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-highlight">规划比执行更重要</span> — 正确的AI规划能力
+                        </div>
+                        <div class="insight-item">
+                            <span class="insight-highlight">工具选择决定效率</span> — 从2周到4小时的巨大差异
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

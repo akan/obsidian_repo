@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI辅助编程进入巡航模式</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 40pt;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .title {
+            font-size: 40pt;
+            font-weight: 700;
+            margin-bottom: 20pt;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 18pt;
+            font-weight: 500;
+            color: #F4F6F6;
+            margin-bottom: 40pt;
+        }
+
+        .comparison-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12pt;
+            padding: 20pt;
+            width: 90%;
+            max-width: 600pt;
+        }
+
+        .comparison-title {
+            font-size: 16pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 15pt;
+        }
+
+        .comparison-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 15pt;
+        }
+
+        .comparison-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .comparison-time {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #2ECC71;
+            margin-bottom: 5pt;
+        }
+
+        .comparison-tool {
+            font-size: 12pt;
+            color: #AAB7B8;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.8;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 200pt;
+            height: 200pt;
+            top: -50pt;
+            right: -50pt;
+        }
+
+        .shape2 {
+            width: 120pt;
+            height: 120pt;
+            bottom: -30pt;
+            left: -30pt;
+            opacity: 0.6;
+        }
+
+        .tech-icon {
+            position: absolute;
+            font-size: 14pt;
+            color: #AAB7B8;
+            font-family: 'Courier New', monospace;
+        }
+
+        .icon1 { top: 30pt; left: 30pt; }
+        .icon2 { top: 60pt; left: 80pt; }
+        .icon3 { bottom: 40pt; right: 50pt; }
+        .icon4 { bottom: 70pt; right: 90pt; }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="tech-icon icon1">function aiAssist() {}</div>
+    <div class="tech-icon icon2">const coding = "cruise";</div>
+    <div class="tech-icon icon3">AI.compute();</div>
+    <div class="tech-icon icon4">while(success) { code(); }</div>
+
+    <div class="slide-content">
+        <h1 class="title">AI辅助编程<br>进入巡航模式</h1>
+        <p class="subtitle">三种主流AI编程工具的实践对比与经验分享</p>
+
+        <div class="comparison-box">
+            <div class="comparison-title">效率对比</div>
+            <div class="comparison-grid">
+                <div class="comparison-item">
+                    <div class="comparison-time">1-2周</div>
+                    <div class="comparison-tool">Claude Code + GLM4.6</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-time">4小时</div>
+                    <div class="comparison-tool">Antigravity + Gemini3 Pro</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-time">2天</div>
+                    <div class="comparison-tool">Auto-coder + Deepseek3.2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

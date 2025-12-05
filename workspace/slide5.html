@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配置文档对比</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 25pt;
+        }
+
+        .title {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .comparison-container {
+            display: flex;
+            flex: 1;
+            gap: 20pt;
+        }
+
+        .config-card {
+            flex: 1;
+            background: rgba(39, 120, 132, 0.6);
+            border-radius: 12pt;
+            padding: 20pt;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .config-card.highlight {
+            background: rgba(39, 120, 132, 0.8);
+            border: 2pt solid #F39C12;
+        }
+
+        .config-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15pt;
+        }
+
+        .config-icon {
+            width: 40pt;
+            height: 40pt;
+            background: #F39C12;
+            border-radius: 8pt;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #1C2833;
+        }
+
+        .config-title {
+            flex: 1;
+        }
+
+        .config-name {
+            font-size: 18pt;
+            font-weight: 600;
+            margin-bottom: 4pt;
+        }
+
+        .config-description {
+            font-size: 12pt;
+            color: #AAB7B8;
+        }
+
+        .config-content {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 8pt;
+            padding: 15pt;
+            font-family: 'Courier New', monospace;
+            font-size: 11pt;
+            line-height: 1.4;
+            overflow: hidden;
+        }
+
+        .config-line {
+            margin-bottom: 6pt;
+            display: flex;
+        }
+
+        .config-line.highlight {
+            color: #F39C12;
+            font-weight: 600;
+        }
+
+        .line-number {
+            width: 25pt;
+            color: #666;
+            margin-right: 10pt;
+            text-align: right;
+        }
+
+        .line-content {
+            flex: 1;
+        }
+
+        .key-features {
+            margin-top: 15pt;
+        }
+
+        .feature-title {
+            font-size: 14pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 10pt;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 6pt;
+            font-size: 12pt;
+        }
+
+        .feature-bullet {
+            color: #F39C12;
+            margin-right: 8pt;
+            margin-top: 2pt;
+        }
+
+        .feature-text {
+            flex: 1;
+            line-height: 1.3;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 120pt;
+            height: 120pt;
+            top: -30pt;
+            right: -30pt;
+        }
+
+        .shape2 {
+            width: 80pt;
+            height: 80pt;
+            bottom: -20pt;
+            left: 100pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">配置文档对比</h1>
+        </div>
+
+        <div class="comparison-container">
+            <div class="config-card">
+                <div class="config-header">
+                    <div class="config-icon">CL</div>
+                    <div class="config-title">
+                        <div class="config-name">CLAUDE.md</div>
+                        <div class="config-description">项目指导文档</div>
+                    </div>
+                </div>
+
+                <div class="config-content">
+                    <div class="config-line">
+                        <span class="line-number">1</span>
+                        <span class="line-content"># 项目概述</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">2</span>
+                        <span class="line-content">## 目录结构</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">3</span>
+                        <span class="line-content">backend/ - 后端API接口</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">4</span>
+                        <span class="line-content">frontend/ - Vue前端应用</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">5</span>
+                        <span class="line-content">vue-copilotkit/ - 核心库</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">6</span>
+                        <span class="line-content"></span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">7</span>
+                        <span class="line-content">## 技术栈</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">8</span>
+                        <span class="line-content">- Vue 3.x</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">9</span>
+                        <span class="line-content">- CopilotKit 1.10.6+</span>
+                    </div>
+                </div>
+
+                <div class="key-features">
+                    <div class="feature-title">核心特性</div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">提供清晰的项目结构指导</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">定义开发规范和约定</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-card highlight">
+                <div class="config-header">
+                    <div class="config-icon">RU</div>
+                    <div class="config-title">
+                        <div class="config-name">autocoder RULES.md</div>
+                        <div class="config-description">Auto-coder 系统规则</div>
+                    </div>
+                </div>
+
+                <div class="config-content">
+                    <div class="config-line">
+                        <span class="line-number">1</span>
+                        <span class="line-content"># Auto-coder 项目规则</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">2</span>
+                        <span class="line-content">## 工作流配置</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">3</span>
+                        <span class="line-content">workflow: "vue-upgrade"</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">4</span>
+                        <span class="line-content">agent: "deepseek-coder"</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">5</span>
+                        <span class="line-content"></span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">6</span>
+                        <span class="line-content">## 代码规范</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">7</span>
+                        <span class="line-content">- 使用 TypeScript</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">8</span>
+                        <span class="line-content">- 遵循 Vue 3 Composition API</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">9</span>
+                        <span class="line-content">- 保持与 React 版本兼容</span>
+                    </div>
+                </div>
+
+                <div class="key-features">
+                    <div class="feature-title">核心特性</div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">定义AI辅助编程规则</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">配置自动化工作流程</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">指定代码生成标准</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-card">
+                <div class="config-header">
+                    <div class="config-icon">AG</div>
+                    <div class="config-title">
+                        <div class="config-name">Antigravity 配置</div>
+                        <div class="config-description">自动化环境配置</div>
+                    </div>
+                </div>
+
+                <div class="config-content">
+                    <div class="config-line">
+                        <span class="line-number">1</span>
+                        <span class="line-content">{</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">2</span>
+                        <span class="line-content">  "model": "gemini-3-pro",</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">3</span>
+                        <span class="line-content">  "support": "sonnet-4.5",</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">4</span>
+                        <span class="line-content">  "mcp": "auto-enable",</span>
+                    </div>
+                    <div class="config-line highlight">
+                        <span class="line-number">5</span>
+                        <span class="line-content">  "agent": "none",</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">6</span>
+                        <span class="line-content">  "workflow": "automatic"</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">7</span>
+                        <span class="line-content">}</span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">8</span>
+                        <span class="line-content"></span>
+                    </div>
+                    <div class="config-line">
+                        <span class="line-number">9</span>
+                        <span class="line-content"># 开箱即用特性</span>
+                    </div>
+                </div>
+
+                <div class="key-features">
+                    <div class="feature-title">核心特性</div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">无需预配置代理</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">自动启用MCP功能</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-bullet">•</span>
+                        <span class="feature-text">智能化工作流执行</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

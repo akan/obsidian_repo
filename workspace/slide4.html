@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实施方法：项目设计</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 25pt;
+        }
+
+        .title {
+            font-size: 26pt;
+            font-weight: 700;
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            gap: 30pt;
+        }
+
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .design-principle {
+            background: rgba(39, 120, 132, 0.7);
+            border-radius: 12pt;
+            padding: 20pt;
+            margin-bottom: 20pt;
+        }
+
+        .principle-title {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 12pt;
+        }
+
+        .principle-content {
+            font-size: 14pt;
+            line-height: 1.5;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10pt;
+        }
+
+        .benefit-icon {
+            width: 20pt;
+            height: 20pt;
+            background: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            margin-top: 2pt;
+            font-size: 12pt;
+            font-weight: bold;
+            color: #1C2833;
+            flex-shrink: 0;
+        }
+
+        .benefit-text {
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+
+        .directory-structure {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12pt;
+            padding: 20pt;
+            flex: 1;
+        }
+
+        .structure-title {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 15pt;
+        }
+
+        .tree {
+            font-family: 'Courier New', monospace;
+            font-size: 12pt;
+            line-height: 1.4;
+        }
+
+        .tree-item {
+            margin-bottom: 4pt;
+            display: flex;
+            align-items: center;
+        }
+
+        .tree-icon {
+            margin-right: 8pt;
+            color: #F39C12;
+        }
+
+        .tree-folder {
+            color: #277884;
+            font-weight: 600;
+        }
+
+        .tree-file {
+            color: #AAB7B8;
+        }
+
+        .highlight-box {
+            background: rgba(243, 156, 18, 0.2);
+            border: 2pt solid #F39C12;
+            border-radius: 8pt;
+            padding: 15pt;
+            margin-top: 20pt;
+        }
+
+        .highlight-title {
+            font-size: 16pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 8pt;
+        }
+
+        .highlight-content {
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.05;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 150pt;
+            height: 150pt;
+            top: -40pt;
+            right: -40pt;
+        }
+
+        .shape2 {
+            width: 80pt;
+            height: 80pt;
+            bottom: -20pt;
+            left: 50pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+    <div class="accent-shape shape2"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">实施方法：项目设计</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="left-section">
+                <div class="design-principle">
+                    <div class="principle-title">目录结构设计理念</div>
+                    <div class="principle-content">
+                        三个独立目录的设计，为AI辅助编程提供最佳实践环境
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">1</div>
+                    <div class="benefit-text">
+                        <strong>充足上下文</strong><br>
+                        为AI提供完整的代码环境，减少理解偏差
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">2</div>
+                    <div class="benefit-text">
+                        <strong>明确参考方案</strong><br>
+                        后端代码作为接口文档，前端代码提供实现参考
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <div class="benefit-icon">3</div>
+                    <div class="benefit-text">
+                        <strong>Debug支持</strong><br>
+                        同时拥有前后端代码，便于问题定位和调试
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-title">关键成功因素</div>
+                    <div class="highlight-content">
+                        项目初始化和AI工具的正确配置，是后续顺利进行的基础
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="directory-structure">
+                    <div class="structure-title">项目目录结构</div>
+                    <div class="tree">
+                        <div class="tree-item">
+                            <span class="tree-icon">📁</span>
+                            <span class="tree-folder">project-workspace/</span>
+                        </div>
+                        <div class="tree-item">
+                            <span class="tree-icon">├── 📁</span>
+                            <span class="tree-folder">backend/</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">package.json</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">server.js</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">└── 📄</span>
+                            <span class="tree-file">CLAUDE.md</span>
+                        </div>
+                        <div class="tree-item">
+                            <span class="tree-icon">├── 📁</span>
+                            <span class="tree-folder">frontend/</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">package.json</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">vue.config.js</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">└── 📄</span>
+                            <span class="tree-file">CLAUDE.md</span>
+                        </div>
+                        <div class="tree-item">
+                            <span class="tree-icon">└── 📁</span>
+                            <span class="tree-folder">vue-copilotkit/</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">README.md</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">├── 📄</span>
+                            <span class="tree-file">autocoder RULES.md</span>
+                        </div>
+                        <div class="tree-item" style="margin-left: 20pt;">
+                            <span class="tree-icon">└── 📄</span>
+                            <span class="tree-file">src/...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

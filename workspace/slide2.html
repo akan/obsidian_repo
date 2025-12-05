@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目背景</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #ffffff;
+            width: 720pt;
+            height: 405pt;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 40pt;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            margin-bottom: 30pt;
+        }
+
+        .title {
+            font-size: 28pt;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 15pt;
+            position: relative;
+            display: inline-block;
+        }
+
+        .title::after {
+            content: '';
+            position: absolute;
+            bottom: -5pt;
+            left: 0;
+            width: 100%;
+            height: 4pt;
+            background: #F39C12;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            gap: 30pt;
+        }
+
+        .left-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-column {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .info-box {
+            background: rgba(39, 120, 132, 0.8);
+            border-radius: 12pt;
+            padding: 20pt;
+            margin-bottom: 20pt;
+        }
+
+        .info-title {
+            font-size: 18pt;
+            font-weight: 600;
+            color: #F39C12;
+            margin-bottom: 10pt;
+        }
+
+        .info-content {
+            font-size: 14pt;
+            line-height: 1.5;
+        }
+
+        .version-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8pt;
+            padding: 15pt;
+            margin-bottom: 15pt;
+        }
+
+        .version-number {
+            font-size: 24pt;
+            font-weight: 700;
+            color: #F39C12;
+            margin-bottom: 5pt;
+        }
+
+        .version-detail {
+            font-size: 14pt;
+            color: #AAB7B8;
+        }
+
+        .requirement {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10pt;
+        }
+
+        .requirement-icon {
+            width: 24pt;
+            height: 24pt;
+            background: #F39C12;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12pt;
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1C2833;
+        }
+
+        .requirement-text {
+            font-size: 14pt;
+            line-height: 1.4;
+        }
+
+        .accent-shape {
+            position: absolute;
+            background: #F39C12;
+            opacity: 0.1;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .shape1 {
+            width: 150pt;
+            height: 150pt;
+            top: -40pt;
+            right: -40pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="accent-shape shape1"></div>
+
+    <div class="slide-content">
+        <div class="header">
+            <h1 class="title">项目背景</h1>
+        </div>
+
+        <div class="content">
+            <div class="left-column">
+                <div class="info-box">
+                    <div class="info-title">Vue-CopilotKit 升级项目</div>
+                    <div class="info-content">
+                        现有 1.0.1 版本需要升级至最新版本 1.10.6+，以实现与 React 新版的完全兼容
+                    </div>
+                </div>
+
+                <div class="requirement">
+                    <div class="requirement-icon">1</div>
+                    <div class="requirement-text">
+                        <strong>主线需求：</strong>Vue-CopilotKit 升级到与 React 新版兼容
+                    </div>
+                </div>
+
+                <div class="requirement">
+                    <div class="requirement-icon">2</div>
+                    <div class="requirement-text">
+                        <strong>支线需求：</strong>后端接口优化，支持更多模型切换和功能扩展
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div>
+                    <div class="version-info">
+                        <div class="version-number">1.0.1 → 1.10.6+</div>
+                        <div class="version-detail">当前版本 → 目标版本</div>
+                    </div>
+
+                    <div class="version-info">
+                        <div class="version-detail">
+                            <strong>后端改进：</strong><br>
+                            • 模型切换能力<br>
+                            • 功能扩展性增强<br>
+                            • 接口灵活性提升
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
