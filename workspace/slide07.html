@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>总结与反思</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+        .slide {
+            width: 720px;
+            height: 405px;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #FE4447;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+        .insight-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            border-left: 8px solid #FE4447;
+            width: 100%;
+        }
+        .quote {
+            font-size: 28px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            font-weight: 300;
+        }
+        .highlight {
+            color: #5EA8A7;
+            font-weight: bold;
+        }
+        .explanation {
+            font-size: 18px;
+            color: #AAB7B8;
+            line-height: 1.6;
+        }
+        .accent-shape {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            width: 100px;
+            height: 100px;
+            background: rgba(254, 68, 71, 0.1);
+            border-radius: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1 class="title">总结与反思</h1>
+        <div class="content">
+            <div class="insight-card">
+                <div class="quote">
+                    "好的开始，是成功的一半。"
+                </div>
+                <div class="explanation">
+                    当大家学习这种<span class="highlight">半自动编程</span>时（一次提示，然后可以跑1个小时以上？），最难的并不是后面解决问题，而是<span class="highlight">前面如何初始化项目</span>，如何让AI做正确的规划。
+                </div>
+            </div>
+        </div>
+        <div class="accent-shape"></div>
+    </div>
+</body>
+</html>

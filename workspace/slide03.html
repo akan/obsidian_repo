@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>什么任务？</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+        .slide {
+            width: 720px;
+            height: 405px;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #FE4447;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content {
+            flex-grow: 1;
+        }
+        .task-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #5EA8A7;
+        }
+        .task-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #5EA8A7;
+        }
+        .requirement {
+            margin-bottom: 20px;
+        }
+        .requirement h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #FE4447;
+        }
+        .requirement p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .version {
+            background: rgba(94, 168, 167, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1 class="title">什么任务？</h1>
+        <div class="content">
+            <div class="task-card">
+                <div class="version">Vue-CopilotKit 1.0.1 → 1.10.6+</div>
+                <div class="task-name">Vue-CopilotKit 升级项目</div>
+                
+                <div class="requirement">
+                    <h3>主线需求</h3>
+                    <p>Vue-CopilotKit需要升级到与React新版兼容</p>
+                </div>
+                
+                <div class="requirement">
+                    <h3>支线需求</h3>
+                    <p>后端接口也修改了，之前很呆板，现在可以换模型，后端可以做更多的事情了</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

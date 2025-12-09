@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>未来已来</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+        .slide {
+            width: 720px;
+            height: 405px;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #FE4447;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-grow: 1;
+        }
+        .news-section {
+            display: flex;
+            gap: 40px;
+        }
+        .news-card {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        .news-card.bad-news {
+            border-left: 5px solid #E74C3C;
+        }
+        .news-card.good-news {
+            border-left: 5px solid #2ECC71;
+        }
+        .news-label {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .bad-news .news-label {
+            background: rgba(231, 76, 60, 0.2);
+            color: #E74C3C;
+        }
+        .good-news .news-label {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ECC71;
+        }
+        .news-content {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .future-section {
+            background: rgba(94, 168, 167, 0.15);
+            border-radius: 12px;
+            padding: 25px;
+            border-left: 5px solid #5EA8A7;
+        }
+        .future-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #5EA8A7;
+        }
+        .future-content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #FE4447;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1 class="title">未来已来</h1>
+        <div class="content">
+            <div class="news-section">
+                <div class="news-card bad-news">
+                    <div class="news-label">坏消息</div>
+                    <div class="news-content">
+                        AI辅助编程对前端的挑战非常大
+                    </div>
+                </div>
+                <div class="news-card good-news">
+                    <div class="news-label">好消息</div>
+                    <div class="news-content">
+                        <span class="highlight">灵光</span>这类LLM结果动态渲染的AI应用已经开始崭露头角
+                    </div>
+                </div>
+            </div>
+            
+            <div class="future-section">
+                <div class="future-title">AI应用的新方向</div>
+                <div class="future-content">
+                    • AI应用的前端在输入和输出上都会变得足够复杂<br>
+                    • 这是一条希望之路<br>
+                    • Vue-CopilotKit部分支持动态渲染，还需要进一步增强
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

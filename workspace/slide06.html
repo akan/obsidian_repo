@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>截图展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+        .slide {
+            width: 720px;
+            height: 405px;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #FE4447;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            flex-grow: 1;
+        }
+        .image-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-placeholder {
+            flex-grow: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #AAB7B8;
+            font-size: 12px;
+            text-align: center;
+            min-height: 100px;
+        }
+        .image-label {
+            padding: 8px;
+            background: rgba(94, 168, 167, 0.3);
+            font-size: 12px;
+            text-align: center;
+            color: #5EA8A7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <h1 class="title">项目实践截图</h1>
+        <div class="gallery">
+            <div class="image-container">
+                <div class="image-placeholder">项目结构<br>目录展示</div>
+                <div class="image-label">项目目录</div>
+            </div>
+            <div class="image-container">
+                <div class="image-placeholder">CLAUDE.md<br>配置文件</div>
+                <div class="image-label">CLAUDE.md</div>
+            </div>
+            <div class="image-container">
+                <div class="image-placeholder">RULES.md<br>配置文件</div>
+                <div class="image-label">RULES.md</div>
+            </div>
+            <div class="image-container">
+                <div class="image-placeholder">Antigravity<br>界面展示</div>
+                <div class="image-label">Antigravity</div>
+            </div>
+            <div class="image-container">
+                <div class="image-placeholder">Antigravity<br>配置界面</div>
+                <div class="image-label">配置详情</div>
+            </div>
+            <div class="image-container">
+                <div class="image-placeholder">项目运行<br>效果展示</div>
+                <div class="image-label">运行效果</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

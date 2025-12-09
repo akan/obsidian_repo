@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同一个任务，3种不同的尝试</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #277884 100%);
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+        .slide {
+            width: 720px;
+            height: 405px;
+            position: relative;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            border-bottom: 4px solid #FE4447;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            gap: 20px;
+        }
+        .option {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 5px solid #FE4447;
+        }
+        .option h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #FE4447;
+        }
+        .option p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-size: 16px;
+            font-weight: bold;
+            color: #5EA8A7;
+        }
+        .cost {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #AAB7B8;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <div class="header">
+            <h1 class="title">同一个任务，3种不同的尝试</h1>
+        </div>
+        <div class="content">
+            <div class="option">
+                <h3>方案一：Claude Code + GLM4.6</h3>
+                <p>• task-master-ai, software-planning-tools, +mcp</p>
+                <p>• GLM4.6规划能力OK，代码生成能力偏弱</p>
+                <p>• 需要配置skills，结合agent</p>
+                <p>• 手工执行workflow</p>
+                <p class="highlight">用时：1-2周</p>
+                <p class="cost">费用：GLM4.6包月60元</p>
+            </div>
+            <div class="option">
+                <h3>方案二：Antigravity + Gemini3-Pro</h3>
+                <p>• Sonnet4.5</p>
+                <p>• 无需配置agent</p>
+                <p>• 自动启用MCP</p>
+                <p class="highlight">体验丝滑</p>
+                <p class="highlight">用时：4小时</p>
+            </div>
+            <div class="option">
+                <h3>方案三：Auto-coder + Deepseek3.2</h3>
+                <p>• +workflow +agent</p>
+                <p class="highlight">用时：2天</p>
+                <p class="cost">成本：24.59元</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
