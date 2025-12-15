@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端团建啦，谁是麦霸？</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Songti SC', 'STSong', 'SimSun', serif;
+            background-color: #ffffff;
+            color: #000000;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 1080px;
+            height: 1440px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .image-section {
+            width: 100%;
+            height: 530px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .theme-image {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .karaoke-scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .person {
+            width: 60px;
+            height: 120px;
+            margin: 0 15px;
+            position: relative;
+            animation: bounce 2s infinite alternate;
+        }
+
+        .person:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+
+        .person:nth-child(even) {
+            animation-delay: 1s;
+        }
+
+        .head {
+            width: 30px;
+            height: 30px;
+            background: #ffdbac;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 15px;
+        }
+
+        .body {
+            width: 40px;
+            height: 70px;
+            background: #4a90e2;
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            top: 25px;
+            left: 10px;
+        }
+
+        .mic {
+            width: 8px;
+            height: 25px;
+            background: #333;
+            border-radius: 4px;
+            position: absolute;
+            top: 15px;
+            right: -5px;
+            transform: rotate(30deg);
+        }
+
+        .mic::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: #666;
+            border-radius: 50%;
+            position: absolute;
+            top: -8px;
+            left: -3px;
+        }
+
+        .music-notes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .note {
+            position: absolute;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.8);
+            animation: float 3s infinite ease-in-out;
+        }
+
+        .note:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
+        .note:nth-child(2) { top: 30%; left: 70%; animation-delay: 0.5s; }
+        .note:nth-child(3) { top: 50%; left: 30%; animation-delay: 1s; }
+        .note:nth-child(4) { top: 40%; left: 80%; animation-delay: 1.5s; }
+        .note:nth-child(5) { top: 60%; left: 60%; animation-delay: 2s; }
+
+        .stage-lights {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .light {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 4s infinite alternate;
+        }
+
+        .light:nth-child(1) {
+            background: rgba(255, 0, 100, 0.3);
+            top: -50px;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .light:nth-child(2) {
+            background: rgba(0, 255, 100, 0.3);
+            top: -50px;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .light:nth-child(3) {
+            background: rgba(100, 0, 255, 0.3);
+            top: 50px;
+            left: 50%;
+            animation-delay: 2s;
+        }
+
+        .text-section {
+            width: 100%;
+            height: 910px;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 80px 100px;
+            background-color: #ffffff;
+        }
+
+        .author-info {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .title-area {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main-title {
+            font-size: 110px;
+            font-weight: 400;
+            line-height: 1.0;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+        }
+
+        .title-line {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .summary-area {
+            font-size: 24px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .summary-prefix {
+            margin-right: 8px;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-10px) scale(1.05);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 图片区域 -->
+        <div class="image-section">
+            <div class="theme-image">
+                <!-- 舞台灯光效果 -->
+                <div class="stage-lights">
+                    <div class="light"></div>
+                    <div class="light"></div>
+                    <div class="light"></div>
+                </div>
+
+                <!-- K歌场景 -->
+                <div class="karaoke-scene">
+                    <!-- 10个人物代表10人团队 -->
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                    <div class="person">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="mic"></div>
+                    </div>
+                </div>
+
+                <!-- 音符装饰 -->
+                <div class="music-notes">
+                    <div class="note">♪</div>
+                    <div class="note">♫</div>
+                    <div class="note">♪</div>
+                    <div class="note">♬</div>
+                    <div class="note">♫</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文字区域 -->
+        <div class="text-section">
+            <div class="author-info">@ AI产品自由</div>
+
+            <div class="title-area">
+                <h1 class="main-title">
+                    <span class="title-line">前端团建啦</span>
+                    <span class="title-line">谁是麦霸？</span>
+                </h1>
+            </div>
+
+            <div class="summary-area">
+                <span class="summary-prefix">▎</span>
+                十人团队K歌大赛，一展歌喉谁是王？前端开发者们的音乐天赋大爆发！
+            </div>
+        </div>
+    </div>
+</body>
+</html>
