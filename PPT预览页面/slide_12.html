@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻灯片 12: 未来展望</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(135deg, #FFF9F0 0%, #E8F4F8 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 60px;
+        }
+
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            font-size: 18px;
+            color: #6B9BD1;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+
+        /* 装饰性手绘边框 */
+        .decorative-border {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 3px solid #F4A6A0;
+            border-radius: 20px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .decorative-border::before,
+        .decorative-border::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #A8D5BA;
+        }
+
+        .decorative-border::before {
+            top: -10px;
+            left: -10px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .decorative-border::after {
+            bottom: -10px;
+            right: -10px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .slide-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 48px;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-size: 24px;
+            color: #6B9BD1;
+            margin-bottom: 30px;
+        }
+
+        .future-sections {
+            margin-top: 40px;
+        }
+
+        .future-section {
+            background: white;
+            padding: 25px 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 6px solid #6B9BD1;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .future-section h3 {
+            font-size: 24px;
+            color: #6B9BD1;
+            margin-bottom: 15px;
+        }
+
+        .future-section ul li {
+            font-size: 18px;
+            color: #2C3E50;
+            margin: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .future-section ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #A8D5BA;
+        }
+
+        .conclusion {
+            text-align: center;
+            font-size: 28px;
+            color: #2C3E50;
+            margin-top: 40px;
+            padding: 30px;
+            background: #E8F4F8;
+            border-radius: 12px;
+            font-weight: 700;
+            border: 3px solid #F4A6A0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="decorative-border"></div>
+
+        <h2 class="slide-title">未来展望</h2>
+        <p class="slide-subtitle">未来展望与实践</p>
+        <div class="future-sections">
+
+            <div class="future-section">
+                <h3>架构演进方向</h3>
+                <ul>
+                    <li>模块化联邦架构成为主流</li>
+                    <li>策略驱动AI代理规模化应用</li>
+                    <li>M1/M2协同体系标准化</li>
+                </ul>
+            </div>
+
+            <div class="future-section">
+                <h3>人机协作深化</h3>
+                <ul>
+                    <li>化身校准扩展到更多领域</li>
+                    <li>人类创造力与AI能力深度融合</li>
+                    <li>专家知识显性化与机器学习结合</li>
+                </ul>
+            </div>
+
+            <div class="future-section">
+                <h3>实践建议</h3>
+                <ul>
+                    <li>建立M1/M2分离的架构体系</li>
+                    <li>重视应用科学，而非科学应用</li>
+                    <li>清晰定义转型中的角色与职责</li>
+                    <li>持续迭代优化，保持动态竞争优势</li>
+                </ul>
+            </div>
+
+        </div>
+        <p class="conclusion">智能代理的未来是协作而非替代</p>
+
+        <div class="slide-number">12 / 13</div>
+    </div>
+</body>
+</html>
