@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻灯片 10: ML中的L</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(135deg, #FFF9F0 0%, #E8F4F8 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 60px;
+        }
+
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            font-size: 18px;
+            color: #6B9BD1;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+
+        /* 装饰性手绘边框 */
+        .decorative-border {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 3px solid #F4A6A0;
+            border-radius: 20px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .decorative-border::before,
+        .decorative-border::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #A8D5BA;
+        }
+
+        .decorative-border::before {
+            top: -10px;
+            left: -10px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .decorative-border::after {
+            bottom: -10px;
+            right: -10px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .slide-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 48px;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-size: 24px;
+            color: #6B9BD1;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 60px;
+            margin-top: 30px;
+        }
+
+        .content-left,
+        .content-right {
+            flex: 1;
+        }
+
+        .content-left h3,
+        .content-right h3 {
+            font-size: 32px;
+            color: #6B9BD1;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .content-left h3::before,
+        .content-right h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: #F4A6A0;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            font-size: 22px;
+            color: #2C3E50;
+            margin: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #A8D5BA;
+            font-size: 18px;
+        }
+
+        .highlight {
+            background: #F4A6A022;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 24px;
+            color: #2C3E50;
+            margin-top: 30px;
+            border-left: 5px solid #F4A6A0;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            background: #A8D5BA22;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .highlight-box p {
+            font-size: 22px;
+            color: #2C3E50;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .emphasis {
+            font-size: 28px !important;
+            font-weight: 700;
+            color: #6B9BD1 !important;
+            text-align: center;
+        }
+
+        .flow {
+            text-align: center;
+        }
+
+        .flow-item {
+            background: #E8F4F8;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 20px;
+            border: 2px dashed #6B9BD1;
+        }
+
+        .arrow {
+            font-size: 36px;
+            color: #F4A6A0;
+            margin: 10px 0;
+        }
+
+        .formula {
+            font-size: 32px;
+            color: #6B9BD1;
+            text-align: center;
+            padding: 30px;
+            background: #E8F4F8;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="decorative-border"></div>
+
+        <h2 class="slide-title">ML中的L</h2>
+        <p class="slide-subtitle">机器学习中的学习组件L</p>
+        <div class="content-wrapper">
+            <div class="content-left">
+                
+        <div class="formula">L = 计算统计学 + 传统统计学</div>
+        <ul>
+            <li>科学：模型f(·)为核心挑战</li>
+            <li>发展：数十年学术研究积累</li>
+            <li>优势：学术界保留结构性优势</li>
+            <li>趋势：通用大模型商品化</li>
+        </ul>
+        
+            </div>
+            <div class="content-right">
+                
+        <h3>L的实现领域</h3>
+        <ul>
+            <li>模型架构设计</li>
+            <li>训练算法优化</li>
+            <li>统计推断方法</li>
+            <li>评估指标体系</li>
+        </ul>
+        <div class="highlight">学术界在L领域保持结构性优势</div>
+        
+            </div>
+        </div>
+
+        <div class="slide-number">10 / 13</div>
+    </div>
+</body>
+</html>

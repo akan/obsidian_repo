@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幻灯片 8: AI落地困境</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', sans-serif;
+            width: 1280px;
+            height: 720px;
+            background: linear-gradient(135deg, #FFF9F0 0%, #E8F4F8 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 60px;
+        }
+
+        .slide-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide-number {
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            font-size: 18px;
+            color: #6B9BD1;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+
+        /* 装饰性手绘边框 */
+        .decorative-border {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            border: 3px solid #F4A6A0;
+            border-radius: 20px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .decorative-border::before,
+        .decorative-border::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #A8D5BA;
+        }
+
+        .decorative-border::before {
+            top: -10px;
+            left: -10px;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .decorative-border::after {
+            bottom: -10px;
+            right: -10px;
+            border-left: none;
+            border-top: none;
+        }
+
+        .slide-title {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 48px;
+            color: #2C3E50;
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-size: 24px;
+            color: #6B9BD1;
+            margin-bottom: 30px;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .problem-box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 5px solid #F4A6A0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .problem-box h3 {
+            font-size: 22px;
+            color: #6B9BD1;
+            margin-bottom: 15px;
+        }
+
+        .problem-box ul li {
+            font-size: 16px;
+            color: #2C3E50;
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .problem-box ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #A8D5BA;
+        }
+
+        .highlight {
+            text-align: center;
+            font-size: 26px;
+            color: #2C3E50;
+            margin-top: 40px;
+            padding: 25px;
+            background: #A8D5BA22;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="decorative-border"></div>
+
+        <h2 class="slide-title">AI落地困境</h2>
+        <p class="slide-subtitle">为什么AI迄今大多失败？</p>
+        <div class="problems-grid">
+
+            <div class="problem-box">
+                <h3>组织结构问题</h3>
+                <ul>
+                    <li>公司不是算法生态系统</li>
+                    <li>供应商/客户未准备好</li>
+                    <li>人才角色管理不当</li>
+                </ul>
+            </div>
+
+            <div class="problem-box">
+                <h3>角色混淆陷阱</h3>
+                <ul>
+                    <li>催化剂 → 愿景、方法、架构理解</li>
+                    <li>倡导者 → 内部企业家</li>
+                    <li>审计员 → 观察报告，不创造</li>
+                </ul>
+            </div>
+
+            <div class="problem-box">
+                <h3>科学方法论问题</h3>
+                <ul>
+                    <li>科学应用 vs 应用科学</li>
+                    <li>领域知识缺失</li>
+                    <li>动态迭代需求</li>
+                </ul>
+            </div>
+
+        </div>
+        <p class="highlight">创造力仍是人类工作核心</p>
+
+        <div class="slide-number">8 / 13</div>
+    </div>
+</body>
+</html>

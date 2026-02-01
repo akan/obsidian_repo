@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能代理回到未来 - PPT预览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .download-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .download-box h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .slides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .slide-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .slide-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .slide-preview {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .slide-info {
+            padding: 20px;
+        }
+
+        .slide-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .slide-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .slide-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 32px;
+            }
+
+            .slides-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 智能代理回到未来</h1>
+            <p>创意手绘风格PPT - AI架构演进与实践探索</p>
+        </div>
+
+        <div class="download-box">
+            <h2>📥 下载完整PPT文件</h2>
+            <p style="margin-bottom: 20px; color: #666;">格式: PowerPoint (.pptx) | 大小: 3.4MB | 幻灯片: 13张</p>
+            <a href="../智能代理回到未来_创意手绘风PPT.pptx" class="download-btn" download>
+                💾 立即下载 PPT
+            </a>
+        </div>
+
+        <div class="slides-grid">
+            <div class="slide-card" onclick="window.open('slide_01.html', '_blank')">
+                <iframe src="slide_01.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">1</span>封面</h3>
+                    <p>智能代理回到未来 - AI架构演进与实践探索</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_02.html', '_blank')">
+                <iframe src="slide_02.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">2</span>目录</h3>
+                    <p>8个主要议题概览</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_03.html', '_blank')">
+                <iframe src="slide_03.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">3</span>效率革命</h3>
+                    <p>效率A vs 效率B：价值创造的新范式</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_04.html', '_blank')">
+                <iframe src="slide_04.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">4</span>化身校准</h3>
+                    <p>人机协作的新范式</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_05.html', '_blank')">
+                <iframe src="slide_05.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">5</span>联邦架构</h3>
+                    <p>服务层与智能节点的双层模型</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_06.html', '_blank')">
+                <iframe src="slide_06.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">6</span>三种架构</h3>
+                    <p>MAU/MAE/MAP架构模式</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_07.html', '_blank')">
+                <iframe src="slide_07.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">7</span>智能代理分类</h3>
+                    <p>策略驱动 vs LLM驱动</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_08.html', '_blank')">
+                <iframe src="slide_08.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">8</span>AI落地困境</h3>
+                    <p>失败原因剖析与思考</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_09.html', '_blank')">
+                <iframe src="slide_09.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">9</span>M1与M2</h3>
+                    <p>智能代理AI的机器理论</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_10.html', '_blank')">
+                <iframe src="slide_10.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">10</span>ML中的L</h3>
+                    <p>机器学习中的学习组件L</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_11.html', '_blank')">
+                <iframe src="slide_11.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">11</span>关键洞察</h3>
+                    <p>核心洞察总结</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_12.html', '_blank')">
+                <iframe src="slide_12.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">12</span>未来展望</h3>
+                    <p>未来展望与实践建议</p>
+                </div>
+            </div>
+
+            <div class="slide-card" onclick="window.open('slide_13.html', '_blank')">
+                <iframe src="slide_13.html" class="slide-preview" frameborder="0"></iframe>
+                <div class="slide-info">
+                    <h3><span class="slide-number">13</span>谢谢</h3>
+                    <p>Thank You!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✨ 创意手绘风格设计 | 基于ASCII框架自动生成</p>
+            <p style="margin-top: 10px;">生成时间: 2026-01-08</p>
+        </div>
+    </div>
+
+    <script>
+        // 添加键盘导航
+        document.addEventListener('keydown', function(e) {
+            const iframes = document.querySelectorAll('iframe');
+            let currentSlide = 0;
+
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                currentSlide = (currentSlide + 1) % iframes.length;
+                iframes[currentSlide].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                currentSlide = (currentSlide - 1 + iframes.length) % iframes.length;
+                iframes[currentSlide].scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    </script>
+</body>
+</html>
