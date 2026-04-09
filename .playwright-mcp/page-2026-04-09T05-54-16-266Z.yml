@@ -1,0 +1,43 @@
+- generic [ref=e5]:
+  - generic [ref=e9]:
+    - generic:
+      - link "众合云科":
+        - /url: /about
+        - generic "众合云科"
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e18]:
+          - generic [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]:
+              - combobox [ref=e22]
+              - generic "+86" [ref=e23]
+            - generic:
+              - img
+          - textbox "请输入手机号" [ref=e24]
+        - generic [ref=e33]:
+          - textbox "6 位短信验证码" [ref=e35]
+          - button "获取验证码" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: 获取验证码
+        - button "登录 / 注册" [disabled] [ref=e44]:
+          - generic: 登录 / 注册
+      - generic [ref=e46] [cursor=pointer]:
+        - checkbox "我已阅读并同意语雀 服务协议 和 隐私权政策" [ref=e48]
+        - generic [ref=e50]:
+          - text: 我已阅读并同意语雀
+          - link "服务协议" [ref=e51]:
+            - /url: https://www.yuque.com/terms
+          - text: 和
+          - link "隐私权政策" [ref=e52]:
+            - /url: https://app.nlark.com/mobile-app/pages/privacy-policy.html
+      - generic [ref=e53]: 其他登录方式
+      - generic [ref=e57]:
+        - generic [ref=e60] [cursor=pointer]:
+          - img [ref=e61]
+          - generic [ref=e65]: 密码登录
+        - link [ref=e72] [cursor=pointer]:
+          - /url: /login?platform=alipay
+        - img [ref=e76] [cursor=pointer]
+  - generic [ref=e81] [cursor=pointer]:
+    - generic [ref=e82]: 中文 / English
+    - separator [ref=e83]
+    - generic [ref=e84]: 遇到问题
