@@ -1,19 +1,19 @@
 ---
-title: "大部分token根本不该重复计算，不止于KVCache"
-source: "https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&chksm=86b5b219a4e05ba49c408afe072283258ca1fc3476d9bb8930701d69b4b4c356a99f13eb076a&idx=1&mid=2461160580&sn=a597a21ee92887393693874be366b066#rd"
+title: 大部分token根本不该重复计算，不止于KVCache
+source: https://mp.weixin.qq.com/s?__biz=MzA5MTIxNTY4MQ==&chksm=86b5b219a4e05ba49c408afe072283258ca1fc3476d9bb8930701d69b4b4c356a99f13eb076a&idx=1&mid=2461160580&sn=a597a21ee92887393693874be366b066#rd
 author:
   - "[[winkrun]]"
 published:
 created: 2026-07-24
 description:
 tags:
-  - "KV缓存"
-  - "前缀缓存"
-  - "LMCache"
-  - "分离架构"
-  - "CacheBlend"
-  - "成本控制"
-abstract: "LMCache通过分离架构和CacheBlend技术，将KV缓存管理独立成进程，大幅提升推理效率并降低成本，解决了传统前缀缓存命中率低和资源争抢的问题。"
+  - KV缓存
+  - 前缀缓存
+  - LMCache
+  - 分离架构
+  - CacheBlend
+  - 成本控制
+abstract: LMCache通过分离架构和CacheBlend技术，将KV缓存管理独立成进程，大幅提升推理效率并降低成本，解决了传统前缀缓存命中率低和资源争抢的问题。
 ---
 winkrun AI工程化 *2026年7月19日 10:45*
 
